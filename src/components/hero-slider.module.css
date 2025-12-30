@@ -1,0 +1,151 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  min-height: 700px;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 0, 0, 0.35) 50%,
+    rgba(0, 0, 0, 0.45) 100%
+  );
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 0 var(--container-padding);
+  max-width: 1200px;
+}
+
+.title {
+  font-family: var(--font-hero);
+  font-size: clamp(2rem, 6vw, 4.5rem);
+  font-weight: 400;
+  color: var(--color-white);
+  letter-spacing: 0.2em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-shadow: 0 2px 40px rgba(0, 0, 0, 0.4);
+  margin: 0;
+}
+
+.title:last-child {
+  margin-bottom: 0;
+}
+
+/* Arrow Navigation */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 60px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--color-white);
+  opacity: 0.6;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.arrow:hover {
+  opacity: 1;
+}
+
+.arrow svg {
+  width: 40px;
+  height: 40px;
+  stroke-width: 1.5;
+}
+
+.arrowLeft {
+  left: clamp(1rem, 4vw, 4rem);
+}
+
+.arrowRight {
+  right: clamp(1rem, 4vw, 4rem);
+}
+
+/* Pagination Dots */
+.pagination {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.75rem;
+  z-index: 10;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.35);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.dot:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.activeDot {
+  background-color: var(--color-white);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 550px;
+  }
+
+  .title {
+    letter-spacing: 0.12em;
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+  }
+
+  .arrow {
+    width: 40px;
+    height: 60px;
+    opacity: 0.5;
+  }
+
+  .arrow svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .pagination {
+    bottom: 1.5rem;
+  }
+}

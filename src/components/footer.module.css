@@ -1,0 +1,310 @@
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+/* Social Bar */
+.socialBar {
+  background-color: var(--color-charcoal-900);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.socialText {
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 2.5vw, 1.65rem);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--color-white);
+  margin-bottom: 1.75rem;
+  letter-spacing: 0.02em;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  gap: 1.75rem;
+}
+
+.socialIcons a {
+  color: var(--color-white);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.socialIcons a:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Contact Section */
+.contactSection {
+  background-color: var(--color-white);
+  padding: var(--section-padding) 0;
+}
+
+.contactContent {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.contactTitle {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.35em;
+  color: var(--color-accent);
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.contactText {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  font-weight: 300;
+  line-height: 1.9;
+  color: var(--color-charcoal-600);
+  margin-bottom: 3rem;
+}
+
+.contactMethods {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.contactButton {
+  display: inline-block;
+  padding: 1.1rem 2.75rem;
+  background-color: var(--color-charcoal-800);
+  color: var(--color-white);
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.contactButton:hover {
+  background-color: var(--color-charcoal-900);
+  transform: translateY(-2px);
+}
+
+.contactButtonOutline {
+  display: inline-block;
+  padding: 1.1rem 2.75rem;
+  border: 1px solid var(--color-charcoal-800);
+  color: var(--color-charcoal-800);
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.contactButtonOutline:hover {
+  background-color: var(--color-charcoal-800);
+  color: var(--color-white);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--color-sand-200);
+  padding: 4.5rem 0 2rem;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding-bottom: 3.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.footerBrand {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footerLogo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.25rem;
+}
+
+.logoMain {
+  font-family: var(--font-display);
+  font-size: 1.65rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--color-charcoal-800);
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+}
+
+.logoSub {
+  font-family: var(--font-body);
+  font-size: 0.55rem;
+  font-weight: 400;
+  letter-spacing: 0.35em;
+  color: var(--color-charcoal-600);
+  text-transform: uppercase;
+  margin-top: 0.2rem;
+}
+
+.footerTagline {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: var(--color-charcoal-600);
+  margin-bottom: 1.5rem;
+}
+
+.footerSocial {
+  display: flex;
+  gap: 1rem;
+}
+
+.footerSocial a {
+  color: var(--color-charcoal-700);
+  transition: all 0.3s ease;
+}
+
+.footerSocial a:hover {
+  color: var(--color-charcoal-900);
+}
+
+.footerContact {
+  text-align: right;
+}
+
+.footerLabel {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: var(--color-charcoal-600);
+  margin-bottom: 0.35rem;
+}
+
+.footerPhone {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: var(--color-charcoal-800);
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.footerPhone:hover {
+  color: var(--color-accent-dark);
+}
+
+.footerEmail {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: var(--color-charcoal-700);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  margin-bottom: 1.75rem;
+  transition: color 0.3s ease;
+}
+
+.footerEmail:hover {
+  color: var(--color-charcoal-900);
+}
+
+.footerAddress {
+  font-style: normal;
+}
+
+.footerAddress a {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: var(--color-charcoal-600);
+  line-height: 1.65;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.3s ease;
+}
+
+.footerAddress a:hover {
+  color: var(--color-charcoal-800);
+}
+
+/* Footer Bottom */
+.footerBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-top: 1.75rem;
+}
+
+.copyright {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  color: var(--color-charcoal-600);
+}
+
+.footerLinks {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.footerLinks a {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: var(--color-charcoal-600);
+  transition: color 0.3s ease;
+}
+
+.footerLinks a:hover {
+  color: var(--color-charcoal-900);
+}
+
+.footerLinks span {
+  color: var(--color-warm-500);
+}
+
+@media (max-width: 768px) {
+  .footerContent {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footerBrand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footerContact {
+    text-align: center;
+  }
+
+  .footerBottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}

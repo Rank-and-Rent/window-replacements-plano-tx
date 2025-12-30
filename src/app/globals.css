@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Raleway:wght@200;300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&display=swap');
+
+:root {
+  /* Warm Charcoal & Bronze Palette */
+  --color-charcoal-900: #1a1a1a;
+  --color-charcoal-800: #2d2d2d;
+  --color-charcoal-700: #404040;
+  --color-charcoal-600: #525252;
+  --color-warm-500: #6b6b6b;
+  --color-warm-400: #8a8a8a;
+  --color-sand-200: #e5e0d8;
+  --color-sand-100: #f2efe9;
+  --color-cream: #faf8f5;
+  --color-white: #ffffff;
+  --color-accent: #4a7c9b;
+  --color-accent-dark: #3a6280;
+  
+  /* Typography */
+  --font-hero: 'Cinzel', serif;
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Raleway', -apple-system, BlinkMacSystemFont, sans-serif;
+  
+  /* Spacing */
+  --section-padding: clamp(4rem, 8vw, 8rem);
+  --container-max: 1400px;
+  --container-padding: clamp(1.5rem, 5vw, 4rem);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: 300;
+  color: var(--color-charcoal-800);
+  background-color: var(--color-cream);
+  line-height: 1.7;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* Utility Classes */
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Selection styling */
+::selection {
+  background-color: var(--color-charcoal-700);
+  color: var(--color-white);
+}
+
