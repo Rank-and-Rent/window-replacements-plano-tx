@@ -42,7 +42,7 @@ export function ContactSection() {
             <a href="tel:945-207-3988" className={styles.contactButton}>
               Call 945-207-3988
             </a>
-            <a href="mailto:info@windowreplacementplano.com" className={styles.contactButtonOutline}>
+            <a href="mailto:help@windowreplacementplano.com" className={styles.contactButtonOutline}>
               Email Us
             </a>
           </div>
