@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Analytics } from '@vercel/analytics/react'
+import TopBrandBanner from '@/components/top-brand-banner'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -80,6 +81,7 @@ export default function RootLayout({
         <meta name="ICBM" content="33.0198, -96.8245" />
       </head>
       <body>
+        <TopBrandBanner />
         {children}
         <Analytics />
       </body>

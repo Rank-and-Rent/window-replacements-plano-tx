@@ -1,0 +1,94 @@
+.banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  background: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  white-space: nowrap;
+  display: none;
+}
+
+.logoGrid {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+  transition: opacity 0.2s ease;
+}
+
+.logoLink:hover {
+  opacity: 0.8;
+}
+
+.logo {
+  height: 24px;
+  width: auto;
+  max-width: 80px;
+  object-fit: contain;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 0.375rem 0.75rem;
+  }
+
+  .logos {
+    gap: 0.5rem;
+  }
+
+  .logoGrid {
+    gap: 0.5rem;
+  }
+
+  .logo {
+    height: 20px;
+    max-width: 60px;
+  }
+}
+
+@media (max-width: 640px) {
+  .logos {
+    justify-content: center;
+  }
+
+  .label {
+    display: inline;
+    font-size: 0.75rem;
+  }
+
+  .logoGrid {
+    gap: 0.375rem;
+  }
+
+  .logo {
+    height: 18px;
+    max-width: 50px;
+  }
+}
