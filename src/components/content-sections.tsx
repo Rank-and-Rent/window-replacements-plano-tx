@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styles from './content-sections.module.css'
 
 export function VisionSection() {
@@ -8,7 +9,7 @@ export function VisionSection() {
         <p className={styles.sectionText}>
           Your Plano home deserves windows that reflect your commitment to quality and comfort. 
           At Window Replacements of Plano, we carefully curate our selection of premium windows 
-          from industry-leading manufacturers—Andersen, Pella, and Jeld-Wen—to ensure your home 
+          from industry-leading manufacturers—Andersen, Pella, Jeld-Wen, and Marvin—to ensure your home 
           receives nothing less than exceptional craftsmanship. Our long-standing partnerships 
           with these trusted brands mean you get access to the latest innovations in window 
           technology, energy efficiency, and architectural beauty.
@@ -22,7 +23,7 @@ export function FullImageSection1() {
   return (
     <section 
       className={styles.fullImageSection}
-      style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80)' }}
+      style={{ backgroundImage: 'url(/windows/double-hung-windows-plano-tx.avif' }}
     >
       <div className={styles.imageOverlay}></div>
       <div className={styles.imageContent}>
@@ -57,7 +58,7 @@ export function FullImageSection2() {
   return (
     <section 
       className={styles.fullImageSection}
-      style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1920&q=80)' }}
+      style={{ backgroundImage: 'url(/windows/double-hung-windows-plano-tx.avif' }}
     >
       <div className={styles.imageOverlay}></div>
       <div className={styles.imageContent}>
@@ -120,20 +121,25 @@ export function BrandsSection() {
           ensuring every installation meets the highest standards of quality and performance.
         </p>
         <div className={styles.brandsLogos}>
-          <div className={styles.brandLogo}>
+          <Link href="/brands/andersen-windows-doors" className={styles.brandLogo}>
             <span className={styles.brandName}>ANDERSEN</span>
             <span className={styles.brandEst}>Est. 1903</span>
-          </div>
+          </Link>
           <div className={styles.brandDivider}></div>
-          <div className={styles.brandLogo}>
+          <Link href="/brands/pella-windows-doors" className={styles.brandLogo}>
             <span className={styles.brandName}>PELLA</span>
             <span className={styles.brandEst}>Est. 1925</span>
-          </div>
+          </Link>
           <div className={styles.brandDivider}></div>
-          <div className={styles.brandLogo}>
+          <Link href="/brands/jeld-wen-windows-doors" className={styles.brandLogo}>
             <span className={styles.brandName}>JELD-WEN</span>
             <span className={styles.brandEst}>Est. 1960</span>
-          </div>
+          </Link>
+          <div className={styles.brandDivider}></div>
+          <Link href="/brands/marvin-windows-doors" className={styles.brandLogo}>
+            <span className={styles.brandName}>MARVIN</span>
+            <span className={styles.brandEst}>Est. 1912</span>
+          </Link>
         </div>
       </div>
     </section>
@@ -184,7 +190,7 @@ export function FullImageSection3() {
   return (
     <section 
       className={styles.fullImageSection}
-      style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=1920&q=80)' }}
+      style={{ backgroundImage: 'url(/windows/double-hung-windows-plano-tx.avif' }}
     >
       <div className={styles.imageOverlay}></div>
       <div className={styles.imageContent}>

@@ -5,23 +5,23 @@ import styles from './hero-slider.module.css'
 
 const slides = [
   {
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80',
+    image: '/windows/double-hung-windows-plano-tx.avif',
     lines: ['CREATIVELY CRAFTED FOR', 'EVERY STYLE'],
   },
   {
-    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&q=80',
+    image: '/windows/casement-windows-plano-tx.avif',
     lines: ['REMARKABLE CURB', 'APPEAL'],
   },
   {
-    image: 'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1920&q=80',
+    image: '/windows/picture-windows-plano-tx.jpg',
     lines: ['ENERGY EFFICIENT &', 'SUSTAINABLE'],
   },
   {
-    image: 'https://images.unsplash.com/photo-1600573472591-ee6c8e695481?w=1920&q=80',
+    image: '/windows/bay-bow-windows-plano-tx.jpg',
     lines: ['UNOBSTRUCTED', 'VIEWS'],
   },
   {
-    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1920&q=80',
+    image: '/windows/sliding-windows-plano-tx.jpg',
     lines: ['PRECISION ENGINEERED', 'PERFORMANCE'],
   },
 ]

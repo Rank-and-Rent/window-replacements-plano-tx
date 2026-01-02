@@ -99,3 +99,19 @@ button {
   color: var(--color-white);
 }
 
+/* Hero sections need padding to account for fixed header */
+.hero-section,
+[class*="hero"] {
+  padding-top: 100px;
+}
+
+/* Mobile bottom padding for sticky call button */
+@media (max-width: 768px) {
+  main {
+    padding-bottom: 80px;
+  }
+  
+  footer {
+    padding-bottom: 80px;
+  }
+}
