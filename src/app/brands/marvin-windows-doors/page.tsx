@@ -5,7 +5,7 @@ import Footer, { SocialBar, ContactSection } from '@/components/footer'
 import styles from '../brands.module.css'
 
 export const metadata: Metadata = {
-  title: 'Marvin Windows & Doors Plano TX | Authorized Dealer',
+  title: 'Marvin Windows & Doors Plano TX',
   description: 'Authorized Marvin Windows & Doors dealer in Plano, TX. Premium custom windows and doors. Signature, Elevate, Essential collections. Call 945-207-3988.',
   keywords: 'Marvin windows Plano TX, Marvin doors, custom windows, Marvin dealer',
 }
@@ -31,6 +31,42 @@ export default function MarvinPage() {
           <div className={styles.container}>
             <h1>Marvin Window & Door Replacement in Plano, TX</h1>
             <p>Made to Order Excellence Since 1912</p>
+          </div>
+        </section>
+
+        {/* Prominent Brand Logos */}
+        <section className="py-16 lg:py-20 bg-gray-50">
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="flex flex-wrap items-center justify-center gap-8 lg:gap-12">
+              <Link href="/brands/andersen-windows-doors" className="hover:opacity-80 transition-opacity">
+                <img
+                  src="/andersen-windows-and-doors-logo.png"
+                  alt="Andersen Windows & Doors"
+                  className="h-16 lg:h-20 w-auto"
+                />
+              </Link>
+              <Link href="/brands/pella-windows-doors" className="hover:opacity-80 transition-opacity">
+                <img
+                  src="/Pella-Corp-Windows-Doors-Logo-2x1-1.png"
+                  alt="Pella Windows & Doors"
+                  className="h-16 lg:h-20 w-auto"
+                />
+              </Link>
+              <Link href="/brands/jeld-wen-windows-doors" className="hover:opacity-80 transition-opacity">
+                <img
+                  src="/jeld-wen-windows-and-doors-logo.png"
+                  alt="Jeld-Wen Windows & Doors"
+                  className="h-16 lg:h-20 w-auto"
+                />
+              </Link>
+              <Link href="/brands/marvin-windows-doors" className="hover:opacity-80 transition-opacity">
+                <img
+                  src="/Marvin-LOCKUP-CMYK-898x301.png"
+                  alt="Marvin Windows & Doors"
+                  className="h-16 lg:h-20 w-auto"
+                />
+              </Link>
+            </div>
           </div>
         </section>
 

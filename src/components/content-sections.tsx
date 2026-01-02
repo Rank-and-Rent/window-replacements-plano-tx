@@ -120,25 +120,34 @@ export function BrandsSection() {
           We partner exclusively with America&apos;s most trusted window manufacturers, 
           ensuring every installation meets the highest standards of quality and performance.
         </p>
-        <div className={styles.brandsLogos}>
-          <Link href="/brands/andersen-windows-doors" className={styles.brandLogo}>
-            <span className={styles.brandName}>ANDERSEN</span>
-            <span className={styles.brandEst}>Est. 1903</span>
+        <div className="flex flex-wrap justify-center items-center gap-8 lg:gap-12 max-w-6xl mx-auto">
+          <Link href="/brands/andersen-windows-doors" className="hover:opacity-80 transition-opacity">
+            <img
+              src="/andersen-windows-and-doors-logo.png"
+              alt="Andersen Windows & Doors"
+              className="h-16 lg:h-20 w-auto"
+            />
           </Link>
-          <div className={styles.brandDivider}></div>
-          <Link href="/brands/pella-windows-doors" className={styles.brandLogo}>
-            <span className={styles.brandName}>PELLA</span>
-            <span className={styles.brandEst}>Est. 1925</span>
+          <Link href="/brands/pella-windows-doors" className="hover:opacity-80 transition-opacity">
+            <img
+              src="/Pella-Corp-Windows-Doors-Logo-2x1-1.png"
+              alt="Pella Windows & Doors"
+              className="h-16 lg:h-20 w-auto"
+            />
           </Link>
-          <div className={styles.brandDivider}></div>
-          <Link href="/brands/jeld-wen-windows-doors" className={styles.brandLogo}>
-            <span className={styles.brandName}>JELD-WEN</span>
-            <span className={styles.brandEst}>Est. 1960</span>
+          <Link href="/brands/jeld-wen-windows-doors" className="hover:opacity-80 transition-opacity">
+            <img
+              src="/jeld-wen-windows-and-doors-logo.png"
+              alt="Jeld-Wen Windows & Doors"
+              className="h-16 lg:h-20 w-auto"
+            />
           </Link>
-          <div className={styles.brandDivider}></div>
-          <Link href="/brands/marvin-windows-doors" className={styles.brandLogo}>
-            <span className={styles.brandName}>MARVIN</span>
-            <span className={styles.brandEst}>Est. 1912</span>
+          <Link href="/brands/marvin-windows-doors" className="hover:opacity-80 transition-opacity">
+            <img
+              src="/Marvin-LOCKUP-CMYK-898x301.png"
+              alt="Marvin Windows & Doors"
+              className="h-16 lg:h-20 w-auto"
+            />
           </Link>
         </div>
       </div>

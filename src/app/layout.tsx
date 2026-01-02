@@ -55,7 +55,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Window Replacements of Plano',
-    description: 'Premium window replacement in Plano, TX. Andersen, Pella & Jeld-Wen authorized dealer.',
+    description: 'Premium window replacement in Plano, TX. Andersen, Pella & Jeld-Wen windows.',
     images: ['/og-image.jpg'],
   },
   alternates: {
