@@ -6,23 +6,23 @@ import styles from './hero-slider.module.css'
 const slides = [
   {
     image: '/windows/double-hung-windows-plano-tx.avif',
-    lines: ['CREATIVELY CRAFTED FOR', 'EVERY STYLE'],
+    lines: ['WINDOW REPLACEMENT', 'PLANO, TX'],
   },
   {
     image: '/windows/casement-windows-plano-tx.avif',
-    lines: ['REMARKABLE CURB', 'APPEAL'],
+    lines: ['PREMIUM WINDOWS', 'FOR PLANO HOMES'],
   },
   {
     image: '/windows/picture-windows-plano-tx.jpg',
-    lines: ['ENERGY EFFICIENT &', 'SUSTAINABLE'],
+    lines: ['ENERGY EFFICIENT', 'WINDOW REPLACEMENT'],
   },
   {
     image: '/windows/bay-bow-windows-plano-tx.jpg',
-    lines: ['UNOBSTRUCTED', 'VIEWS'],
+    lines: ['CUSTOM WINDOW', 'INSTALLATION PLANO'],
   },
   {
     image: '/windows/sliding-windows-plano-tx.jpg',
-    lines: ['PRECISION ENGINEERED', 'PERFORMANCE'],
+    lines: ['PROFESSIONAL WINDOW', 'REPLACEMENT TEXAS'],
   },
 ]
 

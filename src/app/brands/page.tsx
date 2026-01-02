@@ -18,7 +18,7 @@ export default function BrandsPage() {
       <main>
         <section className={styles.hero}>
           <div className={styles.container}>
-            <h1>Premium Window & Door Brands</h1>
+            <h1>Window Replacement Brands in Plano, TX</h1>
             <p className={styles.heroSubtitle}>
               We partner with the industry&apos;s leading manufacturers to bring Plano homeowners
               the finest quality windows and doors available. Each brand offers unique benefits

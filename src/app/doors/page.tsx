@@ -20,7 +20,7 @@ export default function DoorsIndexPage() {
       <main>
         <section className={styles.indexHero}>
           <div className={styles.container}>
-            <h1>Door Installation Services in Plano, TX</h1>
+            <h1>Door Replacement Services in Plano, TX</h1>
             <p>Transform your home with premium doors from Andersen, Pella, JELD-WEN, and Marvin. Professional installation backed by industry-leading warranties.</p>
           </div>
         </section>

@@ -21,7 +21,7 @@ export default function LocationsPage() {
         <section className={styles.hero}>
           <div className={styles.container}>
             <span className={styles.label}>Service Areas</span>
-            <h1>Window & Door Installation Throughout the Dallas-Fort Worth Area</h1>
+            <h1>Window Replacement Services in Plano, TX & Dallas-Fort Worth Area</h1>
             <p>
               Professional window and door installation services across Plano, TX and surrounding communities. We serve homeowners throughout the metroplex with quality installations and expert craftsmanship.
             </p>
