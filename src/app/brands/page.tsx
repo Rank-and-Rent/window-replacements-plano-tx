@@ -28,37 +28,66 @@ export default function BrandsPage() {
         </section>
 
         {/* Prominent Brand Logos */}
-        <section className="py-16 lg:py-20 bg-gray-50">
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="flex flex-wrap items-center justify-center gap-8 lg:gap-12">
-              <Link href="/brands/andersen-windows-doors" className="hover:opacity-80 transition-opacity">
-                <img
-                  src="/andersen-windows-and-doors-logo.png"
-                  alt="Andersen Windows & Doors"
-                  className="h-16 lg:h-20 w-auto"
-                />
+        <section className="py-20 lg:py-24 bg-gradient-to-br from-gray-50 to-gray-100">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="text-center mb-12">
+              <h2 className="text-2xl lg:text-3xl font-light text-gray-800 mb-4">
+                Trusted Premium Brands
+              </h2>
+              <p className="text-gray-600 max-w-2xl mx-auto">
+                We proudly partner with industry-leading manufacturers to provide Plano homeowners with the finest quality windows and doors
+              </p>
+            </div>
+
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+              <Link href="/brands/andersen-windows-doors" className="group">
+                <div className="bg-white rounded-xl p-8 lg:p-10 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
+                  <img
+                    src="/andersen-windows-and-doors-logo.png"
+                    alt="Andersen Windows & Doors"
+                    className="h-12 lg:h-16 w-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+                  />
+                </div>
               </Link>
-              <Link href="/brands/pella-windows-doors" className="hover:opacity-80 transition-opacity">
-                <img
-                  src="/Pella-Corp-Windows-Doors-Logo-2x1-1.png"
-                  alt="Pella Windows & Doors"
-                  className="h-16 lg:h-20 w-auto"
-                />
+
+              <Link href="/brands/pella-windows-doors" className="group">
+                <div className="bg-white rounded-xl p-8 lg:p-10 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
+                  <img
+                    src="/Pella-Corp-Windows-Doors-Logo-2x1-1.png"
+                    alt="Pella Windows & Doors"
+                    className="h-12 lg:h-16 w-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+                  />
+                </div>
               </Link>
-              <Link href="/brands/jeld-wen-windows-doors" className="hover:opacity-80 transition-opacity">
-                <img
-                  src="/jeld-wen-windows-and-doors-logo.png"
-                  alt="Jeld-Wen Windows & Doors"
-                  className="h-16 lg:h-20 w-auto"
-                />
+
+              <Link href="/brands/jeld-wen-windows-doors" className="group">
+                <div className="bg-white rounded-xl p-8 lg:p-10 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
+                  <img
+                    src="/jeld-wen-windows-and-doors-logo.png"
+                    alt="Jeld-Wen Windows & Doors"
+                    className="h-12 lg:h-16 w-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+                  />
+                </div>
               </Link>
-              <Link href="/brands/marvin-windows-doors" className="hover:opacity-80 transition-opacity">
-                <img
-                  src="/Marvin-LOCKUP-CMYK-898x301.png"
-                  alt="Marvin Windows & Doors"
-                  className="h-16 lg:h-20 w-auto"
-                />
+
+              <Link href="/brands/marvin-windows-doors" className="group">
+                <div className="bg-white rounded-xl p-8 lg:p-10 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
+                  <img
+                    src="/Marvin-LOCKUP-CMYK-898x301.png"
+                    alt="Marvin Windows & Doors"
+                    className="h-12 lg:h-16 w-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+                  />
+                </div>
               </Link>
+            </div>
+
+            <div className="text-center mt-12">
+              <p className="text-sm text-gray-500 mb-4">Click any logo to learn more about each brand</p>
+              <div className="flex items-center justify-center space-x-2">
+                <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
+                <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse" style={{ animationDelay: '0.2s' }}></div>
+                <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse" style={{ animationDelay: '0.4s' }}></div>
+              </div>
             </div>
           </div>
         </section>
