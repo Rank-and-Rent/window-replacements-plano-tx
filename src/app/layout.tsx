@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Best Window Replacement in Plano, TX',
-    description: 'North Texas premier window replacement specialists. Authorized dealer for Andersen, Pella, and Jeld-Wen.',
+    description: 'North Texas premier window replacement specialists. Andersen, Pella, and Jeld-Wen windows.',
     url: 'https://windowreplacementplano.com',
     siteName: 'Window Replacements of Plano',
     locale: 'en_US',
@@ -72,8 +72,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="icon" href="/favicon/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon/favicon-16x16.png" sizes="16x16" type="image/png" />
+        <link rel="icon" href="/favicon/favicon-32x32.png" sizes="32x32" type="image/png" />
+        <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png" />
+        <link rel="manifest" href="/favicon/site.webmanifest" />
         <meta name="theme-color" content="#1a365d" />
         <meta name="geo.region" content="US-TX" />
         <meta name="geo.placename" content="Plano" />

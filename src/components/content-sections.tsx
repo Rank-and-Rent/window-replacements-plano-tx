@@ -114,7 +114,7 @@ export function BrandsSection() {
   return (
     <section id="brands" className={styles.brandsSection}>
       <div className={styles.brandsInner}>
-        <span className={styles.brandsLabel}>AUTHORIZED DEALER</span>
+        <span className={styles.brandsLabel}>TRUSTED PARTNERS</span>
         <h2 className={styles.brandsTitle}>Trusted Brand Partners</h2>
         <p className={styles.brandsText}>
           We partner exclusively with America&apos;s most trusted window manufacturers, 

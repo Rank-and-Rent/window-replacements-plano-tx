@@ -86,7 +86,7 @@ export default function Home() {
               { "@type": "City", "name": "The Colony" },
               { "@type": "City", "name": "Carrollton" }
             ],
-            "description": "Premium window replacement services in Plano, TX. Authorized dealer for Andersen, Pella, Jeld-Wen, and Marvin windows. Expert installation of double-hung, casement, bay, bow, and specialty windows.",
+            "description": "Premium window replacement services in Plano, TX. Andersen, Pella, Jeld-Wen, and Marvin windows. Expert installation of double-hung, casement, bay, bow, and specialty windows.",
             "slogan": "Premium Window Replacement for Plano Homes",
             "foundingDate": "2010",
             "knowsAbout": [

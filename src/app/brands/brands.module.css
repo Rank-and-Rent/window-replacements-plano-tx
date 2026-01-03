@@ -8,7 +8,7 @@
 .breadcrumbs {
   background-color: var(--color-sand-100);
   padding: 1rem 0;
-  padding-top: 6rem;
+  padding-top: 8rem; /* Account for top banner (40px) + header (~80px) */
 }
 
 .breadcrumbs ol {
@@ -37,9 +37,29 @@
 
 /* Hero Section */
 .hero {
-  background-color: var(--color-charcoal-900);
-  padding: 4rem 0;
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 8rem 0 4rem; /* Account for top banner (40px) + header (~80px) */
   text-align: center;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(26, 26, 26, 0.6), rgba(26, 26, 26, 0.85));
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  padding: 0 var(--container-padding);
 }
 
 .hero h1 {
@@ -48,13 +68,15 @@
   font-weight: 400;
   color: var(--color-white);
   margin-bottom: 0.75rem;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
 }
 
 .hero p {
   font-family: var(--font-body);
   font-size: 1.1rem;
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
 }
 
 /* Content Section */
@@ -392,6 +414,57 @@
   color: var(--color-charcoal-600);
 }
 
+/* Brand Partners Banner */
+.brandBanner {
+  padding: 3rem 0 4rem;
+  background-color: #f9fafb;
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.brandBannerContainer {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 clamp(1.5rem, 5vw, 3rem);
+}
+
+.brandLogosWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem 3rem;
+}
+
+.brandLogoLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+}
+
+.brandLogoLink:hover {
+  opacity: 0.8;
+}
+
+.brandLogo {
+  height: 64px;
+  width: auto;
+  max-width: 200px;
+  object-fit: contain;
+  display: block;
+}
+
+@media (min-width: 1024px) {
+  .brandLogo {
+    height: 80px;
+  }
+  
+  .brandLogosWrapper {
+    gap: 3rem;
+  }
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .categoriesGrid,
@@ -409,5 +482,87 @@
     width: 100%;
     max-width: 280px;
     text-align: center;
+  }
+  
+  .brandBanner {
+    padding: 2rem 0 3rem;
+  }
+  
+  .brandLogosWrapper {
+    gap: 1.5rem 2rem;
+  }
+  
+  .brandLogo {
+    height: 56px;
+    max-width: 160px;
+  }
+}
+
+/* Brand Logo Section (for slug pages) */
+.brandLogoSection {
+  padding: 4rem 0 5rem;
+  background-color: #f9fafb;
+}
+
+.brandLogoSectionContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 clamp(1.5rem, 5vw, 3rem);
+}
+
+.brandLogoWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brandLogoContent {
+  text-align: center;
+}
+
+.brandLogoLarge {
+  height: 80px;
+  width: auto;
+  max-width: 300px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+.brandLogoTitle {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--color-charcoal-800);
+  margin: 0;
+}
+
+@media (min-width: 1024px) {
+  .brandLogoSection {
+    padding: 5rem 0 6rem;
+  }
+  
+  .brandLogoLarge {
+    height: 96px;
+    max-width: 350px;
+  }
+  
+  .brandLogoTitle {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .brandLogoSection {
+    padding: 3rem 0 4rem;
+  }
+  
+  .brandLogoLarge {
+    height: 64px;
+    max-width: 240px;
+  }
+  
+  .brandLogoTitle {
+    font-size: 1.25rem;
   }
 }

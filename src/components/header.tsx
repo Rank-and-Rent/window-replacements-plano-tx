@@ -81,8 +81,11 @@ export default function Header() {
       <header className={`${styles.header} ${isScrolled ? styles.scrolled : ''}`}>
         <div className={styles.container}>
           <Link href="/" className={styles.logo} onClick={closeMobileMenu}>
-            <span className={styles.logoScript}>Window Replacements</span>
-            <span className={styles.logoSub}>OF PLANO, LLC</span>
+            <img
+              src="/window-replacement-plano-tx-logo.png"
+              alt="Window Replacements of Plano, LLC"
+              className={styles.logoImage}
+            />
           </Link>
 
           {/* Desktop Phone Number */}
@@ -307,8 +310,11 @@ export default function Header() {
       <nav className={`${styles.mobileMenu} ${isMobileMenuOpen ? styles.mobileMenuOpen : ''}`}>
         <div className={styles.mobileMenuHeader}>
           <Link href="/" className={styles.mobileLogo} onClick={closeMobileMenu}>
-            <span className={styles.mobileLogoMain}>Window Replacements</span>
-            <span className={styles.mobileLogoSub}>OF PLANO, LLC</span>
+            <img
+              src="/window-replacement-plano-tx-logo.png"
+              alt="Window Replacements of Plano, LLC"
+              className={styles.mobileLogoImage}
+            />
           </Link>
           <button
             className={styles.mobileClose}

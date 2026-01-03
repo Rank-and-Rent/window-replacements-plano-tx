@@ -27,24 +27,28 @@ export default function MarvinPage() {
           </div>
         </nav>
 
-        <section className={styles.hero}>
-          <div className={styles.container}>
+        <section 
+          className={styles.hero}
+          style={{ backgroundImage: 'url(/brands/marvin-windows-plano-tx.jpg)' }}
+        >
+          <div className={styles.heroOverlay}></div>
+          <div className={styles.heroContent}>
             <h1>Marvin Window & Door Replacement in Plano, TX</h1>
             <p>Made to Order Excellence Since 1912</p>
           </div>
         </section>
 
         {/* Prominent Brand Logo */}
-        <section className="py-16 lg:py-20 bg-gray-50">
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="flex items-center justify-center">
-              <div className="text-center">
+        <section className={styles.brandLogoSection}>
+          <div className={styles.brandLogoSectionContainer}>
+            <div className={styles.brandLogoWrapper}>
+              <div className={styles.brandLogoContent}>
                 <img
                   src="/Marvin-LOCKUP-CMYK-898x301.png"
                   alt="Marvin Windows & Doors"
-                  className="h-20 lg:h-24 w-auto mx-auto mb-4"
+                  className={styles.brandLogoLarge}
                 />
-                <h2 className="text-xl lg:text-2xl font-serif text-gray-800">Authorized Marvin Dealer</h2>
+                <h2 className={styles.brandLogoTitle}>Authorized Marvin Dealer</h2>
               </div>
             </div>
           </div>

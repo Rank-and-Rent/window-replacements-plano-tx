@@ -6,7 +6,6 @@ export function SocialBar() {
   return (
     <section className={styles.socialBar}>
       <div className={styles.container}>
-        <p className={styles.socialText}>Follow us to see more spectacular transformations.</p>
         <div className={styles.socialIcons}>
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
             <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
@@ -59,20 +58,22 @@ export default function Footer() {
   
   const windowServices = servicesData.filter(s => s.category === 'Windows')
   const doorServices = servicesData.filter(s => s.category === 'Doors')
+  // Show first 8 locations in footer
   const footerLocations = locationsData.slice(0, 8)
 
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
+        {/* Main Footer Links Grid */}
         <div className={styles.topSection}>
+          {/* Brand Column */}
           <div className={styles.brandColumn}>
             <Link href="/" className={styles.logo}>
               <span className={styles.logoMain}>Window Replacements</span>
               <span className={styles.logoSub}>OF PLANO</span>
             </Link>
             <p className={styles.brandDescription}>
-              Plano&apos;s trusted window and door replacement experts. Authorized dealer for 
-              Andersen, Pella, JELD-WEN, and Marvin. Quality installations backed by 
+              Plano&apos;s trusted window and door replacement experts. Andersen, Pella, JELD-WEN, and Marvin. Quality installations backed by
               industry-leading warranties.
             </p>
             <div className={styles.contactBlock}>
@@ -93,6 +94,7 @@ export default function Footer() {
             </div>
           </div>
 
+          {/* Windows Column */}
           <div className={styles.linksColumn}>
             <h4 className={styles.columnTitle}>Window Services</h4>
             <ul className={styles.linkList}>
@@ -106,6 +108,7 @@ export default function Footer() {
             </ul>
           </div>
 
+          {/* Doors Column */}
           <div className={styles.linksColumn}>
             <h4 className={styles.columnTitle}>Door Services</h4>
             <ul className={styles.linkList}>
@@ -118,7 +121,9 @@ export default function Footer() {
               ))}
             </ul>
 
-            <h4 className={styles.columnTitleSpaced}>Brands</h4>
+            <h4 className={styles.columnTitle} style={{ marginTop: '2rem' }}>
+              Brands
+            </h4>
             <ul className={styles.linkList}>
               {brandsData.map((brand) => (
                 <li key={brand.slug}>
@@ -130,6 +135,7 @@ export default function Footer() {
             </ul>
           </div>
 
+          {/* Locations Column */}
           <div className={styles.linksColumn}>
             <h4 className={styles.columnTitle}>Service Areas</h4>
             <ul className={styles.linkList}>
@@ -143,17 +149,35 @@ export default function Footer() {
             </ul>
           </div>
 
+          {/* Quick Links Column */}
           <div className={styles.linksColumn}>
             <h4 className={styles.columnTitle}>Quick Links</h4>
             <ul className={styles.linkList}>
-              <li><Link href="/about" className={styles.link}>About Us</Link></li>
-              <li><Link href="/contact" className={styles.link}>Contact</Link></li>
-              <li><Link href="/privacy" className={styles.link}>Privacy Policy</Link></li>
-              <li><Link href="/terms" className={styles.link}>Terms of Service</Link></li>
+              <li>
+                <Link href="/about" className={styles.link}>
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className={styles.link}>
+                  Contact
+                </Link>
+              </li>
+              <li>
+                <Link href="/privacy" className={styles.link}>
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link href="/terms" className={styles.link}>
+                  Terms of Service
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
 
+        {/* Google Maps */}
         <div className={styles.mapSection}>
           <h4 className={styles.mapTitle}>Find Us</h4>
           <div className={styles.mapContainer}>
@@ -170,9 +194,10 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* Disclosure and Copyright */}
         <div className={styles.bottomSection}>
           <p className={styles.disclosure}>
-            We collaborate with established fulfillment partners to pair homeowners with experienced window and door contractors, providing end-to-end project coordination and support.
+            Disclosure: This site routes inquiries to our chosen fulfillment partner for window and door contractor matching and project coordination support.
           </p>
           <div className={styles.footerBottom}>
             <p className={styles.copyright}>
@@ -190,4 +215,5 @@ export default function Footer() {
   )
 }
 
+// Also export Footer as a named export for components that import it that way
 export { Footer }

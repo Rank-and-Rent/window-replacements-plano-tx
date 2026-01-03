@@ -103,9 +103,7 @@ button {
 .hero-section,
 [class*="hero"] {
   padding-top: 100px;
-}
-
-/* Mobile bottom padding for sticky call button */
+}/* Mobile bottom padding for sticky call button */
 @media (max-width: 768px) {
   main {
     padding-bottom: 80px;

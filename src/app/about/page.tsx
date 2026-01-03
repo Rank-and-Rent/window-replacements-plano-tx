@@ -48,7 +48,7 @@ export default function AboutPage() {
               <ul>
                 <li>Knowledge of local building codes and permit requirements</li>
                 <li>Experience with Plano&apos;s climate considerations</li>
-                <li>Authorized dealers for premium brands like Andersen, Pella, JELD-WEN, and Marvin</li>
+                <li>Premium brands including Andersen, Pella, JELD-WEN, and Marvin</li>
                 <li>Comprehensive service from consultation through project completion</li>
                 <li>Quality craftsmanship and attention to detail</li>
               </ul>
