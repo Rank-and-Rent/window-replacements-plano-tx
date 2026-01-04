@@ -57,9 +57,9 @@ export function PassionSection() {
 
 export function FullImageSection2() {
   return (
-    <section 
+    <section
       className={styles.fullImageSection}
-      style={{ backgroundImage: 'url(/windows/double-hung-windows-plano-tx.avif' }}
+      style={{ backgroundImage: 'url(/windows/casement-windows-plano-tx.avif)' }}
     >
       <div className={styles.imageOverlay}></div>
       <div className={styles.imageContent}>
@@ -236,7 +236,7 @@ export function FullImageSection3() {
   return (
     <section
       className={styles.fullImageSection}
-      style={{ backgroundImage: 'url(/windows/double-hung-windows-plano-tx.avif' }}
+      style={{ backgroundImage: 'url(/windows/picture-windows-plano-tx.jpg)' }}
     >
       <div className={styles.imageOverlay}></div>
       <div className={styles.imageContent}>
