@@ -73,14 +73,14 @@ export function FullImageSection2() {
 
 export function WindowTypesSection() {
   const windowTypes = [
-    { name: 'Double-Hung', desc: 'Classic vertical sliding design' },
-    { name: 'Single-Hung', desc: 'Timeless and cost-effective' },
-    { name: 'Casement', desc: 'Full ventilation with crank operation' },
-    { name: 'Awning', desc: 'Weather-resistant top-hinged design' },
-    { name: 'Sliding', desc: 'Contemporary horizontal operation' },
-    { name: 'Picture', desc: 'Maximize light and views' },
-    { name: 'Bay & Bow', desc: 'Elegant projecting elegance' },
-    { name: 'Specialty', desc: 'Custom architectural shapes' },
+    { name: 'Double-Hung', desc: 'Classic vertical sliding design', image: '/windows/double-hung-windows-plano-tx.avif' },
+    { name: 'Single-Hung', desc: 'Timeless and cost-effective', image: '/windows/single-hung-windows-plano-tx.jpg' },
+    { name: 'Casement', desc: 'Full ventilation with crank operation', image: '/windows/casement-windows-plano-tx.avif' },
+    { name: 'Awning', desc: 'Weather-resistant top-hinged design', image: '/windows/awning-windows-plano-tx.webp' },
+    { name: 'Sliding', desc: 'Contemporary horizontal operation', image: '/windows/sliding-windows-plano-tx.jpg' },
+    { name: 'Picture', desc: 'Maximize light and views', image: '/windows/picture-windows-plano-tx.jpg' },
+    { name: 'Bay & Bow', desc: 'Elegant projecting elegance', image: '/windows/bay-bow-windows-plano-tx.jpg' },
+    { name: 'Specialty', desc: 'Custom architectural shapes', image: '/windows/special-shape-windows-plano-tx.jpg' },
   ]
 
   return (
@@ -97,7 +97,14 @@ export function WindowTypesSection() {
         <div className={styles.windowsGrid}>
           {windowTypes.map((item, index) => (
             <div key={index} className={styles.windowItem}>
-              <span className={styles.windowNumber}>{String(index + 1).padStart(2, '0')}</span>
+              <div className={styles.windowImage}>
+                <img
+                  src={item.image}
+                  alt={item.name}
+                  className={styles.windowImageElement}
+                />
+                <span className={styles.windowNumber}>{String(index + 1).padStart(2, '0')}</span>
+              </div>
               <div className={styles.windowInfo}>
                 <h3 className={styles.windowName}>{item.name}</h3>
                 <p className={styles.windowDesc}>{item.desc}</p>
