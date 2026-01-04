@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { locationsData } from '@/data'
 import styles from './content-sections.module.css'
 
 export function VisionSection() {
@@ -202,9 +203,38 @@ export function ServiceSection() {
   )
 }
 
+export function ServiceAreasSection() {
+  return (
+    <section className={styles.serviceAreasSection}>
+      <div className={styles.serviceAreasInner}>
+        <h2 className={styles.serviceAreasTitle}>Service Areas</h2>
+        <p className={styles.serviceAreasText}>
+          Professional window and door installation throughout Plano and surrounding Dallas-Fort Worth communities.
+        </p>
+        <div className={styles.serviceAreasGrid}>
+          {locationsData.filter(loc => loc.type === 'city').slice(0, 10).map((location) => (
+            <Link
+              key={location.slug}
+              href={location.route}
+              className={styles.serviceAreaLink}
+            >
+              {location.name}
+            </Link>
+          ))}
+        </div>
+        <div className={styles.serviceAreasCta}>
+          <Link href="/locations" className={styles.serviceAreasBtn}>
+            View All Service Areas
+          </Link>
+        </div>
+      </div>
+    </section>
+  )
+}
+
 export function FullImageSection3() {
   return (
-    <section 
+    <section
       className={styles.fullImageSection}
       style={{ backgroundImage: 'url(/windows/double-hung-windows-plano-tx.avif' }}
     >

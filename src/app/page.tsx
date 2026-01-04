@@ -8,6 +8,7 @@ import {
   WindowTypesSection,
   BrandsSection,
   ServiceSection,
+  ServiceAreasSection,
   FullImageSection3,
 } from '@/components/content-sections'
 import { SocialBar, ContactSection, Footer } from '@/components/footer'
@@ -25,6 +26,7 @@ export default function Home() {
         <WindowTypesSection />
         <BrandsSection />
         <ServiceSection />
+        <ServiceAreasSection />
         <FullImageSection3 />
         <ContactSection />
         <SocialBar />

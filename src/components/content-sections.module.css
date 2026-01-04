@@ -410,6 +410,91 @@
   color: var(--color-charcoal-600);
 }
 
+/* ===== SERVICE AREAS SECTION ===== */
+.serviceAreasSection {
+  background: var(--color-stone-100);
+  padding: clamp(5rem, 10vw, 8rem) 0;
+}
+
+.serviceAreasInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+  text-align: center;
+}
+
+.serviceAreasTitle {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--color-charcoal-800);
+  margin-bottom: 1.5rem;
+}
+
+.serviceAreasText {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  font-weight: 300;
+  line-height: 1.9;
+  color: var(--color-charcoal-600);
+  max-width: 600px;
+  margin: 0 auto 4rem;
+}
+
+.serviceAreasGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto 4rem;
+}
+
+.serviceAreaLink {
+  display: block;
+  padding: 1.5rem 1rem;
+  background: var(--color-white);
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--color-charcoal-700);
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.serviceAreaLink:hover {
+  background: var(--color-charcoal-800);
+  color: var(--color-white);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.serviceAreasCta {
+  margin-top: 2rem;
+}
+
+.serviceAreasBtn {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background: transparent;
+  color: var(--color-charcoal-800);
+  border: 2px solid var(--color-charcoal-800);
+  border-radius: 4px;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.serviceAreasBtn:hover {
+  background: var(--color-charcoal-800);
+  color: var(--color-white);
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
   .windowsInner {
@@ -479,5 +564,16 @@
 
   .serviceItem:last-child {
     border-bottom: none;
+  }
+
+  .serviceAreasGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    max-width: none;
+  }
+
+  .serviceAreaLink {
+    padding: 1.25rem 0.75rem;
+    font-size: 0.9rem;
   }
 }
