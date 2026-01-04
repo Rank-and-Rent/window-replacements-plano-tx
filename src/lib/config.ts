@@ -1,0 +1,10 @@
+export const PRIMARY_CITY = "Plano";
+export const PRIMARY_STATE_ABBR = "TX";
+export const PRIMARY_STATE_FULL = "Texas";
+export const COMPANY_NAME = "Window Replacements of Plano";
+export const PHONE = "945-207-3988";
+export const PHONE_DIGITS = "19452073988";
+export const EMAIL = "hello@windowreplacementplanotx.com";
+export const ADDRESS = "Plano, TX";
+export const CANONICAL_URL = "https://www.windowreplacementplanotx.com/";
+export const BUSINESS_HOURS = "Open 24/7";
