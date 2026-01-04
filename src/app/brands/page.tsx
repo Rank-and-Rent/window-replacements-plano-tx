@@ -33,28 +33,28 @@ export default function BrandsPage() {
             <div className={styles.brandLogosWrapper}>
               <Link href="/brands/andersen-windows-doors" className={styles.brandLogoLink}>
                 <img
-                  src="/andersen-windows-and-doors-logo.png"
+                  src="/andersen-windows-and-doors-plano-tx-logo.png"
                   alt="Andersen Windows & Doors"
                   className={styles.brandLogo}
                 />
               </Link>
               <Link href="/brands/pella-windows-doors" className={styles.brandLogoLink}>
                 <img
-                  src="/Pella-Corp-Windows-Doors-Logo-2x1-1.png"
+                  src="/pella-windows-and-doors-plano-tx-logo.png"
                   alt="Pella Windows & Doors"
                   className={styles.brandLogo}
                 />
               </Link>
               <Link href="/brands/jeld-wen-windows-doors" className={styles.brandLogoLink}>
                 <img
-                  src="/jeld-wen-windows-and-doors-logo.png"
+                  src="/jeld-wen-windows-and-doors-plano-tx-logo.png"
                   alt="Jeld-Wen Windows & Doors"
                   className={styles.brandLogo}
                 />
               </Link>
               <Link href="/brands/marvin-windows-doors" className={styles.brandLogoLink}>
                 <img
-                  src="/Marvin-LOCKUP-CMYK-898x301.png"
+                  src="/marvin-windows-and-doors-plano-tx-logo.png"
                   alt="Marvin Windows & Doors"
                   className={styles.brandLogo}
                 />

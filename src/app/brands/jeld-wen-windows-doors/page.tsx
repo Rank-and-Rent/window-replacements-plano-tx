@@ -44,7 +44,7 @@ export default function JeldWenPage() {
             <div className={styles.brandLogoWrapper}>
               <div className={styles.brandLogoContent}>
                 <img
-                  src="/jeld-wen-windows-and-doors-logo.png"
+                  src="/jeld-wen-windows-and-doors-plano-tx-logo.png"
                   alt="Jeld-Wen Windows & Doors"
                   className={styles.brandLogoLarge}
                 />

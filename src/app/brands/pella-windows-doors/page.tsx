@@ -44,7 +44,7 @@ export default function PellaPage() {
             <div className={styles.brandLogoWrapper}>
               <div className={styles.brandLogoContent}>
                 <img
-                  src="/Pella-Corp-Windows-Doors-Logo-2x1-1.png"
+                  src="/pella-windows-and-doors-plano-tx-logo.png"
                   alt="Pella Windows & Doors"
                   className={styles.brandLogoLarge}
                 />

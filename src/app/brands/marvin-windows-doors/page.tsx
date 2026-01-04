@@ -44,7 +44,7 @@ export default function MarvinPage() {
             <div className={styles.brandLogoWrapper}>
               <div className={styles.brandLogoContent}>
                 <img
-                  src="/Marvin-LOCKUP-CMYK-898x301.png"
+                  src="/marvin-windows-and-doors-plano-tx-logo.png"
                   alt="Marvin Windows & Doors"
                   className={styles.brandLogoLarge}
                 />

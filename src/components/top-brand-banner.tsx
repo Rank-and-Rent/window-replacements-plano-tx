@@ -11,28 +11,28 @@ export default function TopBrandBanner() {
           <div className={styles.logoGrid}>
             <a href="/brands" className={styles.logoLink}>
               <img
-                src="/andersen-windows-and-doors-logo.png"
+                src="/andersen-windows-and-doors-plano-tx-logo.png"
                 alt="Andersen Windows & Doors"
                 className={styles.logo}
               />
             </a>
             <a href="/brands" className={styles.logoLink}>
               <img
-                src="/Pella-Corp-Windows-Doors-Logo-2x1-1.png"
+                src="/pella-windows-and-doors-plano-tx-logo.png"
                 alt="Pella Windows & Doors"
                 className={styles.logo}
               />
             </a>
             <a href="/brands" className={styles.logoLink}>
               <img
-                src="/jeld-wen-windows-and-doors-logo.png"
+                src="/jeld-wen-windows-and-doors-plano-tx-logo.png"
                 alt="Jeld-Wen Windows & Doors"
                 className={styles.logo}
               />
             </a>
             <a href="/brands" className={styles.logoLink}>
               <img
-                src="/Marvin-LOCKUP-CMYK-898x301.png"
+                src="/marvin-windows-and-doors-plano-tx-logo.png"
                 alt="Marvin Windows & Doors"
                 className={styles.logo}
               />

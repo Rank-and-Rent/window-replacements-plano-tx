@@ -3,7 +3,6 @@ import { SocialBar, ContactSection, Footer } from "@/components/footer";
 import { servicesData } from "@/data";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
 
 interface PageProps {
   params: {
@@ -40,7 +39,17 @@ export default function WindowServicePage({ params }: PageProps) {
   const service = servicesData.find(s => s.slug === params.slug && s.category === "Windows");
 
   if (!service) {
-    notFound();
+    return (
+      <>
+        <Header />
+        <div style={{ padding: '2rem', textAlign: 'center' }}>
+          <h1>Service Not Found</h1>
+          <p>The service you're looking for doesn't exist.</p>
+          <Link href="/">Return to Home</Link>
+        </div>
+        <Footer />
+      </>
+    );
   }
 
   const content = {
@@ -132,16 +141,16 @@ export default function WindowServicePage({ params }: PageProps) {
             </h2>
             <div className="flex justify-center items-center gap-6 flex-wrap">
               <a href="/brands" className="hover:opacity-80 transition-opacity">
-                <img src="/andersen-windows-and-doors-logo.png" alt="Andersen" className="h-12 w-auto" />
+                <img src="/andersen-windows-and-doors-plano-tx-logo.png" alt="Andersen" className="h-12 w-auto" />
               </a>
               <a href="/brands" className="hover:opacity-80 transition-opacity">
-                <img src="/Pella-Corp-Windows-Doors-Logo-2x1-1.png" alt="Pella" className="h-12 w-auto" />
+                <img src="/pella-windows-and-doors-plano-tx-logo.png" alt="Pella" className="h-12 w-auto" />
               </a>
               <a href="/brands" className="hover:opacity-80 transition-opacity">
-                <img src="/jeld-wen-windows-and-doors-logo.png" alt="Jeld-Wen" className="h-12 w-auto" />
+                <img src="/jeld-wen-windows-and-doors-plano-tx-logo.png" alt="Jeld-Wen" className="h-12 w-auto" />
               </a>
               <a href="/brands" className="hover:opacity-80 transition-opacity">
-                <img src="/Marvin-LOCKUP-CMYK-898x301.png" alt="Marvin" className="h-12 w-auto" />
+                <img src="/marvin-windows-and-doors-plano-tx-logo.png" alt="Marvin" className="h-12 w-auto" />
               </a>
             </div>
           </div>

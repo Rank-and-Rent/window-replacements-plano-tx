@@ -44,7 +44,7 @@ export default function AndersenPage() {
             <div className={styles.brandLogoWrapper}>
               <div className={styles.brandLogoContent}>
                 <img
-                  src="/andersen-windows-and-doors-logo.png"
+                  src="/andersen-windows-and-doors-plano-tx-logo.png"
                   alt="Andersen Windows & Doors"
                   className={styles.brandLogoLarge}
                 />
