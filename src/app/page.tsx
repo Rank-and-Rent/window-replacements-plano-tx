@@ -11,7 +11,7 @@ import {
   ServiceAreasSection,
   FullImageSection3,
 } from '@/components/content-sections'
-import { SocialBar, ContactSection, Footer } from '@/components/footer'
+import { ContactSection, Footer } from '@/components/footer'
 
 export default function Home() {
   return (
@@ -29,7 +29,6 @@ export default function Home() {
         <ServiceAreasSection />
         <FullImageSection3 />
         <ContactSection />
-        <SocialBar />
       </main>
       <Footer />
 

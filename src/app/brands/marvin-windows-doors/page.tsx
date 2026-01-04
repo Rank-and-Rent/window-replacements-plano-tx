@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Header from '@/components/header'
-import Footer, { SocialBar, ContactSection } from '@/components/footer'
+import Footer, { ContactSection } from '@/components/footer'
 import styles from '../brands.module.css'
 
 export const metadata: Metadata = {
@@ -141,7 +141,6 @@ export default function MarvinPage() {
         </section>
 
         <ContactSection />
-        <SocialBar />
       </main>
       <Footer />
     </>

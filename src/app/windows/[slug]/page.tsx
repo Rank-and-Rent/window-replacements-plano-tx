@@ -1,5 +1,5 @@
 import Header from "@/components/header";
-import { SocialBar, ContactSection, Footer } from "@/components/footer";
+import { ContactSection, Footer } from "@/components/footer";
 import { servicesData } from "@/data";
 import Link from "next/link";
 import type { Metadata } from "next";
@@ -185,7 +185,6 @@ export default function WindowServicePage({ params }: PageProps) {
       </section>
 
       <ContactSection />
-      <SocialBar />
       <Footer />
     </>
   );

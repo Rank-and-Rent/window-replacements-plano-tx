@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Header from '@/components/header'
-import Footer, { SocialBar, ContactSection } from '@/components/footer'
+import Footer, { ContactSection } from '@/components/footer'
 import { servicesData } from '@/data'
 import styles from './windows.module.css'
 
@@ -71,7 +71,6 @@ export default function WindowsIndexPage() {
         </section>
 
         <ContactSection />
-        <SocialBar />
       </main>
       <Footer />
     </>

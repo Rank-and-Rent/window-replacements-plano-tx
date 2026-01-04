@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Header from '@/components/header'
-import Footer, { SocialBar, ContactSection } from '@/components/footer'
+import Footer, { ContactSection } from '@/components/footer'
 
 export const metadata: Metadata = {
   title: 'Window Replacement The Colony TX | Expert Installation Services',

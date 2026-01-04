@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Header from '@/components/header'
-import Footer, { SocialBar, ContactSection } from '@/components/footer'
+import Footer, { ContactSection } from '@/components/footer'
 import { brandsData } from '@/data'
 import styles from './brands.module.css'
 
@@ -124,7 +124,6 @@ export default function BrandsPage() {
         </section>
 
         <ContactSection />
-        <SocialBar />
       </main>
       <Footer />
     </>

@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import Header from '@/components/header'
-import Footer, { SocialBar, ContactSection } from '@/components/footer'
+import Footer, { ContactSection } from '@/components/footer'
 import { locationsData } from '@/data'
 import styles from './locations.module.css'
 
@@ -89,7 +89,6 @@ export default function LocationsPage() {
         </section>
 
         <ContactSection />
-        <SocialBar />
       </main>
       <Footer />
     </>

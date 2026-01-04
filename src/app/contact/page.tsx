@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Header from '@/components/header'
-import Footer, { SocialBar } from '@/components/footer'
+import Footer from '@/components/footer'
 import { servicesData } from '@/data'
 import styles from './contact.module.css'
 
@@ -214,8 +214,6 @@ export default function ContactPage() {
             </div>
           </div>
         </section>
-
-        <SocialBar />
       </main>
       <Footer />
     </>

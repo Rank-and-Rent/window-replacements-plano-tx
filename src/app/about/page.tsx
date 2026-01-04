@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Header from '@/components/header'
-import Footer, { SocialBar, ContactSection } from '@/components/footer'
+import Footer, { ContactSection } from '@/components/footer'
 import styles from './about.module.css'
 
 export const metadata = {
@@ -76,7 +76,6 @@ export default function AboutPage() {
         </section>
 
         <ContactSection />
-        <SocialBar />
       </main>
       <Footer />
     </>
