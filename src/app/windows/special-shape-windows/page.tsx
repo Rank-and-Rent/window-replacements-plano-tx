@@ -16,7 +16,7 @@ export default function SpecialShapeWindowsPage() {
   const content = {
     title: 'Special Shape Window Replacement in Plano, TX',
     subtitle: 'Custom Geometry for Distinctive Architecture',
-    heroImage: '/windows/double-hung-windows-plano-tx.webp',
+    heroImage: '/windows/special-shape-windows-plano-tx.jpg',
     
     intro: "Special shape windows break free from rectangular conventions to create architectural statements that define spaces and establish your Plano home's unique character. From dramatic arched transoms to geometric octagons, from delicate radius windows to commanding circular features, specialty windows transform ordinary openings into design focal points that capture attention and flood interiors with natural light in unexpected ways.",
     

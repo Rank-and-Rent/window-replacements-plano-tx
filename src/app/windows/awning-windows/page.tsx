@@ -16,7 +16,7 @@ export default function AwningWindowsPage() {
   const content = {
     title: 'Awning Window Replacement in Plano, TX',
     subtitle: 'Ventilate Your Home Rain or Shine',
-    heroImage: '/windows/double-hung-windows-plano-tx.webp',
+    heroImage: '/windows/awning-windows-plano-tx.webp',
     
     intro: "Awning windows offer a unique advantage that sets them apart from every other operable window style: they provide ventilation even during rain. Hinged at the top and opening outward, the sash creates a protective awning that shields the opening from weather while allowing fresh air to flow freely. This practical design makes awning windows the intelligent choice for bathrooms, kitchens, and any Plano space where year-round ventilation matters.",
     

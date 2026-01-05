@@ -16,7 +16,7 @@ export default function CasementWindowsPage() {
   const content = {
     title: 'Casement Window Replacement in Plano, TX',
     subtitle: 'Unmatched Ventilation and Contemporary Elegance',
-    heroImage: '/windows/double-hung-windows-plano-tx.webp',
+    heroImage: '/windows/casement-windows-plano-tx.avif',
     
     intro: "Casement windows represent the pinnacle of window ventilation technology. Hinged on one side and opening outward with a smooth crank mechanism, they capture and direct breezes into your Plano home with unmatched efficiency. Their expansive, unobstructed glass areas flood interiors with natural light while providing stunning views of your landscape. For homeowners seeking windows that combine contemporary aesthetics with practical functionality, casement windows deliver on every front.",
     

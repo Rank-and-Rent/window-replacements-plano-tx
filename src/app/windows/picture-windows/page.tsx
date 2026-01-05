@@ -16,7 +16,7 @@ export default function PictureWindowsPage() {
   const content = {
     title: 'Picture Window Replacement in Plano, TX',
     subtitle: 'Frame Your World with Uninterrupted Views',
-    heroImage: '/windows/double-hung-windows-plano-tx.webp',
+    heroImage: '/windows/picture-windows-plano-tx.jpg',
     
     intro: "Picture windows do exactly what their name suggests—they frame views like artwork, transforming outdoor landscapes into living focal points within your Plano home. As fixed, non-operable units, they eliminate the moving parts and weatherstripping complexities that can compromise other window types, resulting in maximum energy efficiency, expansive glass areas, and unobstructed views that connect your interior spaces with the beauty outside.",
     
