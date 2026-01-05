@@ -16,7 +16,7 @@ export default function McKinneyPage() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: 'url(/locations/window-replacement-mckinney-tx.jpg)',
+            backgroundImage: 'url(/locations/window-replacement-mckinney-tx-3.jpg)',
           }}
         />
         <div className="hero-overlay absolute inset-0" />
