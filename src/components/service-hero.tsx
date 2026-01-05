@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styles from './service-hero.module.css'
 
 interface ServiceHeroProps {
@@ -8,19 +9,25 @@ interface ServiceHeroProps {
 
 export default function ServiceHero({ title, subtitle, image }: ServiceHeroProps) {
   return (
-    <section className={styles.hero} style={{ backgroundImage: `url(${image})` }}>
-      <div className={styles.overlay}></div>
-      <div className={styles.content}>
-        <div className={styles.breadcrumb}>
-          <a href="/">Home</a>
-          <span>/</span>
-          <a href="/#windows">Windows</a>
-          <span>/</span>
-          <span>{title}</span>
+    <>
+      <nav className={styles.breadcrumbs}>
+        <div className={styles.container}>
+          <ol>
+            <li><Link href="/">Home</Link></li>
+            <li>/</li>
+            <li><Link href="/windows">Windows</Link></li>
+            <li>/</li>
+            <li>{title}</li>
+          </ol>
         </div>
-        <h1 className={styles.title}>{title}</h1>
-        <p className={styles.subtitle}>{subtitle}</p>
-      </div>
-    </section>
+      </nav>
+      <section className={styles.hero} style={{ backgroundImage: `url(${image})` }}>
+        <div className={styles.overlay}></div>
+        <div className={styles.content}>
+          <h1>{title}</h1>
+          <p>{subtitle}</p>
+        </div>
+      </section>
+    </>
   )
 }
