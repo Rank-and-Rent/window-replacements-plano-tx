@@ -1,67 +1,63 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import Header from '@/components/header'
 import Footer, { ContactSection } from '@/components/footer'
+import styles from '../locations.module.css'
 
 export const metadata: Metadata = {
   title: 'Window Replacement Dallas TX | Expert Installation Services',
-  description: 'Professional window replacement in Dallas, Texas. Serving Plano, Richardson, and North Dallas areas. Premium Andersen, Pella & Jeld-Wen windows. Call 945-207-3988.',
+  description: 'Professional window replacement in Dallas, Texas. Serving Dallas neighborhoods, and all Dallas neighborhoods. Premium Andersen, Pella & Jeld-Wen windows. Call 945-207-3988.',
 }
 
 export default function DallasPage() {
   return (
     <>
       <Header />
+      <main>
+        <nav className={styles.breadcrumbs}>
+          <div className={styles.container}>
+            <ol>
+              <li><Link href="/">Home</Link></li>
+              <li>/</li>
+              <li><Link href="/locations">Locations</Link></li>
+              <li>/</li>
+              <li>Dallas, TX</li>
+            </ol>
+          </div>
+        </nav>
 
-      <section className="relative min-h-[60vh] flex items-center pt-32">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: 'url(/locations/window-replacement-dallas-tx.jpg)',
-          }}
-        />
-        <div className="hero-overlay absolute inset-0" />
-
-        <div className="relative z-10 w-full max-w-[1400px] mx-auto px-6 lg:px-12">
-          <h1 className="text-heading-serif text-4xl md:text-5xl lg:text-6xl text-white font-light mb-6">
-            Window Replacement in Dallas, TX
-          </h1>
-          <p className="text-white/90 text-lg md:text-xl max-w-2xl mb-8">
-            Serving Dallas with premium replacement windows. From historic homes to modern developments, we deliver quality installations backed by manufacturer warranties.
-          </p>
-          <a href="/contact" className="btn-white">
-            Get Quote
-          </a>
-        </div>
-      </section>
-
-      <section className="py-20 md:py-28 bg-white">
-        <div className="max-w-[1200px] mx-auto px-6 lg:px-12">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-            <div>
-              <img
-                src="/locations/window-replacement-dallas-tx.jpg"
-                alt="Dallas window replacement"
-                className="w-full aspect-[4/5] object-cover"
-              />
-            </div>
-
-            <div>
-              <h2 className="text-heading-serif text-3xl md:text-4xl text-charcoal-900 font-light mb-6">
-                Window expertise for Dallas's communities
-              </h2>
-              <p className="text-charcoal-600 text-base leading-relaxed mb-6">
-                Dallas's diverse neighborhoods create unique opportunities for window replacement projects. From established residential areas to newer developments, we understand the architectural diversity that makes each home unique. Our experienced team brings specialized knowledge for Dallas's building styles and homeowner preferences.
-              </p>
-              <p className="text-charcoal-600 text-base leading-relaxed mb-6">
-                The city's location creates specific climate considerations. Dallas homes benefit from enhanced energy-efficient solutions that address local weather patterns and solar exposure. We ensure optimal energy efficiency and comfort throughout your Dallas home.
-              </p>
-              <p className="text-charcoal-600 text-base leading-relaxed">
-                As a locally-based company, we take pride in serving our Dallas neighbors. Our transparent pricing, professional installations, and comprehensive warranties have made us the trusted choice for window replacement throughout Dallas's communities.
-              </p>
+        <section className={styles.hero} style={{ backgroundImage: 'url(/locations/window-replacement-dallas-tx-3.jpg)' }}>
+          <div className={styles.heroOverlay}></div>
+          <div className={styles.heroContent}>
+            <h1>Window Replacement in Dallas, TX</h1>
+            <p>Serving Dallas with premium replacement windows. From historic homes to modern developments, we deliver quality installations backed by manufacturer warranties.</p>
+            <div className={styles.heroCta}>
+              <Link href="/contact" className={styles.btnPrimary}>Get Free Estimate</Link>
+              <a href="tel:945-207-3988" className={styles.btnSecondary}>Call 945-207-3988</a>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+
+        <section className={styles.content}>
+          <div className={styles.container}>
+            <div className={styles.grid}>
+              <div className={styles.imageCol}>
+                <img
+                  src="/locations/window-replacement-dallas-tx-3.jpg"
+                  alt="Dallas window replacement"
+                  className={styles.locationImage}
+                />
+              </div>
+
+              <div className={styles.textCol}>
+                <h2>Window expertise for Dallas's communities</h2>
+                <p>Dallas's diverse neighborhoods create unique opportunities for window replacement projects. From established residential areas to newer developments, we understand the architectural diversity that makes each home unique. Our experienced team brings specialized knowledge for Dallas's building styles and homeowner preferences.</p>
+                <p>The city's location creates specific climate considerations. Dallas homes benefit from enhanced energy-efficient solutions that address local weather patterns and solar exposure. We ensure optimal energy efficiency and comfort throughout your Dallas home.</p>
+                <p>As a locally-based company, we take pride in serving our Dallas neighbors. Our transparent pricing, professional installations, and comprehensive warranties have made us the trusted choice for window replacement throughout Dallas's communities.</p>
+              </div>
+            </div>
+          </div>
+        </section>
 
       <section className="py-20 bg-stone-100">
         <div className="max-w-[1200px] mx-auto px-6 lg:px-12">
@@ -74,33 +70,33 @@ export default function DallasPage() {
             <div>
               <h3 className="text-[11px] tracking-[0.2em] uppercase font-medium text-charcoal-900 mb-3">North Dallas</h3>
               <ul className="text-charcoal-600 space-y-1">
-                <li>Preston Hollow</li>
-                <li>North Dallas</li>
-                <li>Far North Dallas</li>
-                <li>Lake Highlands</li>
-                <li>White Rock</li>
+                <li>Craig Ranch</li>
+                <li>Eldorado</li>
+                <li>Trinity Falls</li>
+                <li>Chestnut Ridge</li>
+                <li>Twin Creeks</li>
               </ul>
             </div>
             
             <div>
               <h3 className="text-[11px] tracking-[0.2em] uppercase font-medium text-charcoal-900 mb-3">Central Dallas</h3>
               <ul className="text-charcoal-600 space-y-1">
+                <li>Dallas Town Center</li>
                 <li>Downtown Dallas</li>
-                <li>Deep Ellum</li>
-                <li>Uptown</li>
-                <li>Oak Lawn</li>
-                <li>Design District</li>
+                <li>Chestnut Square</li>
+                <li>Vista Ridge</li>
+                <li>Fairview</li>
               </ul>
             </div>
             
             <div>
-              <h3 className="text-[11px] tracking-[0.2em] uppercase font-medium text-charcoal-900 mb-3">East Dallas</h3>
+              <h3 className="text-[11px] tracking-[0.2em] uppercase font-medium text-charcoal-900 mb-3">South Dallas</h3>
               <ul className="text-charcoal-600 space-y-1">
-                <li>Lakewood</li>
-                <li>Bishop Arts</li>
-                <li>Klyde Warren Park</li>
-                <li>Victory Park</li>
-                <li>Fair Park</li>
+                <li>Stonebridge Ranch</li>
+                <li>Kings Ridge</li>
+                <li>Lake Forest</li>
+                <li>Watters Creek</li>
+                <li>Providence</li>
               </ul>
             </div>
           </div>
@@ -165,7 +161,8 @@ export default function DallasPage() {
             </a>
           </div>
         </div>
-      </section>
+        </section>
+      </main>
 
       <Footer />
     </>

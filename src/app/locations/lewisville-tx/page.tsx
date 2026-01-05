@@ -1,67 +1,63 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import Header from '@/components/header'
 import Footer, { ContactSection } from '@/components/footer'
+import styles from '../locations.module.css'
 
 export const metadata: Metadata = {
   title: 'Window Replacement Lewisville TX | Expert Installation Services',
-  description: 'Professional window replacement in Lewisville, Texas. Serving Lake Dallas, Castle Hills, and all Lewisville neighborhoods. Premium Andersen, Pella & Jeld-Wen windows. Call 945-207-3988.',
+  description: 'Professional window replacement in Lewisville, Texas. Serving Lewisville neighborhoods, and all Lewisville neighborhoods. Premium Andersen, Pella & Jeld-Wen windows. Call 945-207-3988.',
 }
 
 export default function LewisvillePage() {
   return (
     <>
       <Header />
+      <main>
+        <nav className={styles.breadcrumbs}>
+          <div className={styles.container}>
+            <ol>
+              <li><Link href="/">Home</Link></li>
+              <li>/</li>
+              <li><Link href="/locations">Locations</Link></li>
+              <li>/</li>
+              <li>Lewisville, TX</li>
+            </ol>
+          </div>
+        </nav>
 
-      <section className="relative min-h-[60vh] flex items-center pt-32">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: 'url(/locations/window-replacement-lewisville-tx.jpg)',
-          }}
-        />
-        <div className="hero-overlay absolute inset-0" />
-
-        <div className="relative z-10 w-full max-w-[1400px] mx-auto px-6 lg:px-12">
-          <h1 className="text-heading-serif text-4xl md:text-5xl lg:text-6xl text-white font-light mb-6">
-            Window Replacement in Lewisville, TX
-          </h1>
-          <p className="text-white/90 text-lg md:text-xl max-w-2xl mb-8">
-            Serving Lewisville with premium replacement windows. From historic homes to modern developments, we deliver quality installations backed by manufacturer warranties.
-          </p>
-          <a href="/contact" className="btn-white">
-            Get Quote
-          </a>
-        </div>
-      </section>
-
-      <section className="py-20 md:py-28 bg-white">
-        <div className="max-w-[1200px] mx-auto px-6 lg:px-12">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-            <div>
-              <img
-                src="/locations/window-replacement-lewisville-tx.jpg"
-                alt="Lewisville window replacement"
-                className="w-full aspect-[4/5] object-cover"
-              />
-            </div>
-
-            <div>
-              <h2 className="text-heading-serif text-3xl md:text-4xl text-charcoal-900 font-light mb-6">
-                Window expertise for Lewisville's communities
-              </h2>
-              <p className="text-charcoal-600 text-base leading-relaxed mb-6">
-                Lewisville's diverse neighborhoods create unique opportunities for window replacement projects. From established residential areas to newer developments, we understand the architectural diversity that makes each home unique. Our experienced team brings specialized knowledge for Lewisville's building styles and homeowner preferences.
-              </p>
-              <p className="text-charcoal-600 text-base leading-relaxed mb-6">
-                The city's location creates specific climate considerations. Lewisville homes benefit from enhanced energy-efficient solutions that address local weather patterns and solar exposure. We ensure optimal energy efficiency and comfort throughout your Lewisville home.
-              </p>
-              <p className="text-charcoal-600 text-base leading-relaxed">
-                As a locally-based company, we take pride in serving our Lewisville neighbors. Our transparent pricing, professional installations, and comprehensive warranties have made us the trusted choice for window replacement throughout Lewisville's communities.
-              </p>
+        <section className={styles.hero} style={{ backgroundImage: 'url(/locations/window-replacement-lewisville-tx-2.jpg)' }}>
+          <div className={styles.heroOverlay}></div>
+          <div className={styles.heroContent}>
+            <h1>Window Replacement in Lewisville, TX</h1>
+            <p>Serving Lewisville with premium replacement windows. From historic homes to modern developments, we deliver quality installations backed by manufacturer warranties.</p>
+            <div className={styles.heroCta}>
+              <Link href="/contact" className={styles.btnPrimary}>Get Free Estimate</Link>
+              <a href="tel:945-207-3988" className={styles.btnSecondary}>Call 945-207-3988</a>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+
+        <section className={styles.content}>
+          <div className={styles.container}>
+            <div className={styles.grid}>
+              <div className={styles.imageCol}>
+                <img
+                  src="/locations/window-replacement-lewisville-tx-2.jpg"
+                  alt="Lewisville window replacement"
+                  className={styles.locationImage}
+                />
+              </div>
+
+              <div className={styles.textCol}>
+                <h2>Window expertise for Lewisville's communities</h2>
+                <p>Lewisville's diverse neighborhoods create unique opportunities for window replacement projects. From established residential areas to newer developments, we understand the architectural diversity that makes each home unique. Our experienced team brings specialized knowledge for Lewisville's building styles and homeowner preferences.</p>
+                <p>The city's location creates specific climate considerations. Lewisville homes benefit from enhanced energy-efficient solutions that address local weather patterns and solar exposure. We ensure optimal energy efficiency and comfort throughout your Lewisville home.</p>
+                <p>As a locally-based company, we take pride in serving our Lewisville neighbors. Our transparent pricing, professional installations, and comprehensive warranties have made us the trusted choice for window replacement throughout Lewisville's communities.</p>
+              </div>
+            </div>
+          </div>
+        </section>
 
       <section className="py-20 bg-stone-100">
         <div className="max-w-[1200px] mx-auto px-6 lg:px-12">
@@ -74,11 +70,11 @@ export default function LewisvillePage() {
             <div>
               <h3 className="text-[11px] tracking-[0.2em] uppercase font-medium text-charcoal-900 mb-3">North Lewisville</h3>
               <ul className="text-charcoal-600 space-y-1">
-                <li>Lewisville Lakes</li>
-                <li>Timber Creek</li>
-                <li>Castle Hills</li>
-                <li>Valley Ridge</li>
-                <li>Lewisville Ranch</li>
+                <li>Craig Ranch</li>
+                <li>Eldorado</li>
+                <li>Trinity Falls</li>
+                <li>Chestnut Ridge</li>
+                <li>Twin Creeks</li>
               </ul>
             </div>
             
@@ -86,21 +82,21 @@ export default function LewisvillePage() {
               <h3 className="text-[11px] tracking-[0.2em] uppercase font-medium text-charcoal-900 mb-3">Central Lewisville</h3>
               <ul className="text-charcoal-600 space-y-1">
                 <li>Lewisville Town Center</li>
-                <li>Old Town</li>
-                <li>Lewisville Square</li>
-                <li>Heritage</li>
-                <li>Medical Center</li>
+                <li>Downtown Lewisville</li>
+                <li>Chestnut Square</li>
+                <li>Vista Ridge</li>
+                <li>Fairview</li>
               </ul>
             </div>
             
             <div>
               <h3 className="text-[11px] tracking-[0.2em] uppercase font-medium text-charcoal-900 mb-3">South Lewisville</h3>
               <ul className="text-charcoal-600 space-y-1">
-                <li>Lake Dallas</li>
-                <li>Hidden Cove</li>
-                <li>Vista Ridge</li>
-                <li>Indian Creek</li>
-                <li>Rockbrook</li>
+                <li>Stonebridge Ranch</li>
+                <li>Kings Ridge</li>
+                <li>Lake Forest</li>
+                <li>Watters Creek</li>
+                <li>Providence</li>
               </ul>
             </div>
           </div>
@@ -165,7 +161,8 @@ export default function LewisvillePage() {
             </a>
           </div>
         </div>
-      </section>
+        </section>
+      </main>
 
       <Footer />
     </>
