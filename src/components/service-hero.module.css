@@ -129,7 +129,7 @@
   font-family: var(--font-body);
   font-size: clamp(1rem, 2vw, 1.25rem);
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.9);
+  color: #ffffff;
   margin-bottom: 2rem;
 }
 
