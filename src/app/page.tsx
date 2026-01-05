@@ -1,4 +1,5 @@
 import Header from '@/components/header'
+import MaterialsSection from '@/components/materials-section'
 import HeroSlider from '@/components/hero-slider'
 import {
   VisionSection,
