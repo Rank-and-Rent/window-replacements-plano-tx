@@ -1,7 +1,7 @@
 import { ServiceItem } from "./types";
 
 export const servicesData: ServiceItem[] = [
-  // Window Services (8 types)
+  // Window Types (8 styles)
   {
     slug: "double-hung-windows",
     name: "Double-Hung Windows",
@@ -57,6 +57,56 @@ export const servicesData: ServiceItem[] = [
     short: "Custom-shaped windows including arched, circular, and geometric designs",
     route: "/windows/special-shape-windows",
     category: "Windows",
+  },
+
+  // Materials (6 types)
+  {
+    slug: "vinyl-windows",
+    name: "Vinyl Windows",
+    short: "Low-maintenance vinyl windows with superior energy efficiency",
+    route: "/windows/vinyl-windows",
+    category: "Materials",
+    image: "/window-types/vinyl-plano-tx.jpg",
+  },
+  {
+    slug: "aluminum-windows",
+    name: "Aluminum Windows",
+    short: "Durable aluminum windows with modern thermal efficiency",
+    route: "/windows/aluminum-windows",
+    category: "Materials",
+    image: "/window-types/aluminum-plano-tx.jpg",
+  },
+  {
+    slug: "fibrex-windows",
+    name: "Fibrex Windows",
+    short: "Andersen's premium composite material with wood-like beauty",
+    route: "/windows/fibrex-windows",
+    category: "Materials",
+    image: "/window-types/fibrex-plano-tx.jpg",
+  },
+  {
+    slug: "fiberglass-windows",
+    name: "Fiberglass Windows",
+    short: "Ultimate strength and insulation with authentic wood appearance",
+    route: "/windows/fiberglass-windows",
+    category: "Materials",
+    image: "/window-types/fiberglass-plano-tx.jpg",
+  },
+  {
+    slug: "wood-clad-windows",
+    name: "Wood Clad Windows",
+    short: "Authentic wood interiors with weather-resistant exterior protection",
+    route: "/windows/wood-clad-windows",
+    category: "Materials",
+    image: "/window-types/wood-clad-plano-tx.jpg",
+  },
+  {
+    slug: "wood-windows",
+    name: "Wood Windows",
+    short: "Traditional wood windows with natural beauty and superior insulation",
+    route: "/windows/wood-windows",
+    category: "Materials",
+    image: "/window-types/wood-plano-tx.jpg",
   },
   
   // Door Services (6 types) - routes point to /doors/
