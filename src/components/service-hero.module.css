@@ -61,6 +61,60 @@
   padding: 2rem;
 }
 
+.heroCta {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.btnPrimary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  background: var(--color-accent);
+  color: var(--color-white);
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-radius: 2px;
+  transition: all var(--transition-fast);
+  text-decoration: none;
+}
+
+.btnPrimary:hover {
+  background: var(--color-accent-dark);
+  transform: translateY(-2px);
+}
+
+.btnSecondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  background: transparent;
+  color: var(--color-white);
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border: 2px solid var(--color-white);
+  border-radius: 2px;
+  transition: all var(--transition-fast);
+  text-decoration: none;
+}
+
+.btnSecondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
 
 .title {
   font-family: var(--font-display);

@@ -26,6 +26,10 @@ export default function ServiceHero({ title, subtitle, image }: ServiceHeroProps
         <div className={styles.content}>
           <h1>{title}</h1>
           <p>{subtitle}</p>
+          <div className={styles.heroCta}>
+            <Link href="/contact" className={styles.btnPrimary}>Get Free Estimate</Link>
+            <a href="tel:945-207-3988" className={styles.btnSecondary}>Call 945-207-3988</a>
+          </div>
         </div>
       </section>
     </>
