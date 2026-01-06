@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   title: 'Window Materials Plano TX | Vinyl, Aluminum, Fiberglass & More',
   description: 'Premium window materials in Plano, TX. Vinyl, aluminum, fiberglass, Fibrex, wood clad, and wood windows. Everything priced including installation. Free estimates. Call 945-207-3988.',
   keywords: 'window materials Plano TX, vinyl windows, aluminum windows, fiberglass windows, Fibrex windows, wood clad windows, wood windows',
+  alternates: {
+    canonical: 'https://windowreplacementplano.com/materials',
+  },
 }
 
 export default function MaterialsIndexPage() {

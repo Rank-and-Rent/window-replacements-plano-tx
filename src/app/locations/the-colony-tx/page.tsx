@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: 'Professional window replacement in The Colony, Texas. Serving The Colony neighborhoods, and all The Colony neighborhoods. Premium Andersen, Pella & Jeld-Wen windows. Call 945-207-3988.',
 }
 
-export default function The ColonyPage() {
+export default function TheColonyPage() {
   return (
     <>
       <Header />

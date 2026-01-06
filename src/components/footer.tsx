@@ -32,6 +32,7 @@ export default function Footer() {
   
   const windowServices = servicesData.filter(s => s.category === 'Windows')
   const doorServices = servicesData.filter(s => s.category === 'Doors')
+  const materialServices = servicesData.filter(s => s.category === 'Materials')
   // Show first 8 locations in footer
   const footerLocations = locationsData.slice(0, 8)
 
@@ -103,6 +104,25 @@ export default function Footer() {
                 <li key={brand.slug}>
                   <Link href={brand.route} className={styles.link}>
                     {brand.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Materials Column */}
+          <div className={styles.linksColumn}>
+            <h4 className={styles.columnTitle}>Materials</h4>
+            <ul className={styles.linkList}>
+              <li>
+                <Link href="/materials" className={styles.link}>
+                  View All Materials
+                </Link>
+              </li>
+              {materialServices.map((service) => (
+                <li key={service.slug}>
+                  <Link href={service.route} className={styles.link}>
+                    {service.name}
                   </Link>
                 </li>
               ))}
