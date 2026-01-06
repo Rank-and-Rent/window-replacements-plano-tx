@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import Header from '@/components/header'
 import Footer, { ContactSection } from '@/components/footer'
 import MaterialsSection from '@/components/materials-section'
@@ -32,9 +33,20 @@ export default function WindowsIndexPage() {
             <div className={styles.servicesGrid}>
               {windowServices.map((service) => (
                 <Link key={service.slug} href={service.route} className={styles.serviceCard}>
-                  <h3>{service.name}</h3>
-                  <p>{service.short}</p>
-                  <span className={styles.learnMore}>Learn More</span>
+                  {service.image && (
+                    <Image
+                      src={service.image}
+                      alt={service.name}
+                      width={400}
+                      height={200}
+                      className={styles.serviceCardImage}
+                    />
+                  )}
+                  <div className={styles.serviceCardContent}>
+                    <h3>{service.name}</h3>
+                    <p>{service.short}</p>
+                    <span className={styles.learnMore}>Learn More</span>
+                  </div>
                 </Link>
               ))}
             </div>

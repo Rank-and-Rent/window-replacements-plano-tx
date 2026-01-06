@@ -1,0 +1,138 @@
+import type { Metadata } from 'next'
+import Link from 'next/link'
+import Header from '@/components/header'
+import Footer, { ContactSection } from '@/components/footer'
+import styles from '../materials.module.css'
+
+export const metadata: Metadata = {
+  title: 'Fiberglass Windows Replacement Plano TX | Ultimate Strength & Insulation',
+  description: 'Premium fiberglass replacement windows in Plano, TX. Maximum strength, superior insulation, and authentic wood appearance. Everything priced including installation.',
+  keywords: 'fiberglass windows Plano TX, fiberglass replacement windows, strong windows, insulated fiberglass windows',
+}
+
+export default function FiberglassWindowsPage() {
+  return (
+    <>
+      <Header />
+      <main>
+        <nav className={styles.breadcrumbs}>
+          <div className={styles.container}>
+            <ol>
+              <li><Link href="/">Home</Link></li>
+              <li>/</li>
+              <li><Link href="/materials">Materials</Link></li>
+              <li>/</li>
+              <li>Fiberglass Windows</li>
+            </ol>
+          </div>
+        </nav>
+
+        <section className={styles.hero} style={{ backgroundImage: 'url(/window-types/fiberglass-plano-tx.jpg)' }}>
+          <div className={styles.heroOverlay}></div>
+          <div className={styles.heroContent}>
+            <h1>Fiberglass Windows Replacement in Plano, TX</h1>
+            <p>Ultimate Strength and Insulation with Authentic Wood-Like Beauty</p>
+            <div className={styles.heroCta}>
+              <Link href="/contact" className={styles.btnPrimary}>Get Free Estimate</Link>
+              <a href="tel:945-207-3988" className={styles.btnSecondary}>Call 945-207-3988</a>
+            </div>
+          </div>
+        </section>
+
+        <section className={styles.content}>
+          <div className={styles.container}>
+            <div className={styles.intro}>
+              <p>Plano homeowners seeking the pinnacle of window performance choose fiberglass for its unmatched combination of structural strength, superior thermal efficiency, and authentic wood aesthetics. In a city with tech architecture from historic bungalows to modern developments, fiberglass windows provide the ultimate durability and energy performance that discerning Plano residents demand.</p>
+            </div>
+
+            <div className={styles.section}>
+              <h2>Unrivaled Structural Strength for Plano Homes</h2>
+              <p>Fiberglass is fundamentally stronger than any other window frame material, making it ideal for Plano&apos;s occasional severe weather and hail storms. The material&apos;s tensile strength exceeds steel while maintaining flexibility that prevents cracking during temperature extremes. Unlike vinyl that can become brittle or wood that warps, fiberglass maintains perfect alignment and smooth operation year-round in Plano&apos;s variable climate.</p>
+            </div>
+
+            <div className={styles.section}>
+              <h2>Superior Thermal Performance Reduces Costs</h2>
+              <p>Fiberglass&apos;s naturally low thermal conductivity creates exceptional insulating properties that significantly reduce energy costs in Plano&apos;s hot summers. The material conducts heat 500 times slower than aluminum and far better than wood, creating a natural thermal barrier. Plano homeowners typically see 35-45% reductions in heating and cooling costs with fiberglass windows.</p>
+            </div>
+
+            <div className={styles.section}>
+              <h2>Authentic Wood Beauty Without Maintenance</h2>
+              <p>Modern fiberglass windows replicate the natural beauty of wood with stunning accuracy, yet require none of the maintenance that authentic wood demands in Plano&apos;s climate. Advanced manufacturing creates wood-grain textures virtually indistinguishable from real wood, perfect for Plano&apos;s historic neighborhoods while eliminating annual refinishing requirements.</p>
+            </div>
+
+            <div className={styles.section}>
+              <h2>Moisture Resistance for Texas Climate</h2>
+              <p>Fiberglass is inherently moisture-resistant, making it perfect for Plano&apos;s humid summers and occasional heavy rains. Unlike wood that absorbs moisture and rots, fiberglass remains impervious to water damage. The material never needs sealing or protective treatments, preventing mold and mildew growth that can compromise indoor air quality.</p>
+            </div>
+
+            <div className={styles.section}>
+              <h2>Design Flexibility and Customization</h2>
+              <p>Fiberglass&apos;s workability allows manufacturers to create virtually any window style, size, or configuration. The material accommodates complex curves and irregular shapes that would be difficult with other materials. Available in unlimited color options, fiberglass windows match Plano&apos;s diverse architectural styles from traditional ranch homes to contemporary designs.</p>
+            </div>
+
+            <div className={styles.section}>
+              <h2>Environmental and Health Advantages</h2>
+              <p>Fiberglass represents a responsible choice for environmentally conscious Plano homeowners. The material is 100% recyclable and requires no toxic preservatives. Long service life means fewer replacements over time, reducing manufacturing impacts. For families concerned about health and environmental impact, fiberglass windows provide premium performance with lower ecological footprint.</p>
+            </div>
+
+            <div className={styles.featuresGrid}>
+              <h2>Features and Benefits</h2>
+              <ul>
+                <li>Ultimate strength and impact resistance</li>
+                <li>Superior thermal insulation properties</li>
+                <li>Authentic wood-like appearance</li>
+                <li>Zero maintenance exterior finish</li>
+                <li>Complete moisture resistance</li>
+                <li>20-25 year manufacturer warranties</li>
+                <li>Unlimited color and finish options</li>
+                <li>Compatible with all glass types</li>
+                <li>Exceptional dimensional stability</li>
+                <li>Environmentally responsible material</li>
+              </ul>
+            </div>
+
+            <div className={styles.faqSection}>
+              <h2>Frequently Asked Questions</h2>
+              <div className={styles.faqItem}>
+                <h3>How strong are fiberglass windows?</h3>
+                <p>Fiberglass is stronger than any other window frame material. It exceeds steel in tensile strength while maintaining flexibility, making it ideal for large installations and impact-prone areas in Plano.</p>
+              </div>
+              <div className={styles.faqItem}>
+                <h3>Are fiberglass windows energy efficient?</h3>
+                <p>Extremely. Fiberglass&apos;s low thermal conductivity creates superior insulation. Combined with advanced glass packages, fiberglass windows can reduce energy costs by 35-45% in Plano&apos;s climate.</p>
+              </div>
+              <div className={styles.faqItem}>
+                <h3>Do fiberglass windows require maintenance?</h3>
+                <p>Fiberglass windows require minimal maintenance—just occasional cleaning. They never need painting, staining, or sealing, and they resist fading, cracking, moisture damage, and insect infestation.</p>
+              </div>
+              <div className={styles.faqItem}>
+                <h3>How long do fiberglass windows last?</h3>
+                <p>Quality fiberglass windows last 30-40 years or more with proper care. The material resists degradation indefinitely and maintains its performance and appearance throughout its service life.</p>
+              </div>
+              <div className={styles.faqItem}>
+                <h3>Do fiberglass windows look like real wood?</h3>
+                <p>Yes, modern fiberglass windows can be finished to look exactly like real wood, including staining and painting to match any wood tone. The wood-grain textures are virtually indistinguishable from authentic wood.</p>
+              </div>
+              <div className={styles.faqItem}>
+                <h3>How much do fiberglass windows cost with installation?</h3>
+                <p>Fiberglass window costs with installation vary by style and features. Everything is priced including installation. Pricing starts at around $850 for small vinyl windows and goes up to $3500 per window depending on frame material. We do not sell windows without installation.</p>
+              </div>
+            </div>
+
+            <div className={styles.ctaBox}>
+              <h2>Ready to Upgrade Your Windows?</h2>
+              <p>Get a free consultation and estimate for fiberglass window replacement in Plano, TX.</p>
+              <div className={styles.ctaButtons}>
+                <Link href="/contact" className={styles.btnPrimary}>Get Free Estimate</Link>
+                <a href="tel:945-207-3988" className={styles.btnSecondary}>Call 945-207-3988</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <ContactSection />
+      </main>
+      <Footer />
+    </>
+  )
+}

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import Header from '@/components/header'
 import Footer, { ContactSection } from '@/components/footer'
 import { brandsData } from '@/data'
@@ -9,6 +10,9 @@ export const metadata: Metadata = {
   title: 'Premium Window & Door Brands Plano TX | Andersen, Pella, JELD-WEN, Marvin',
   description: 'Premium window and door brands in Plano, TX. Andersen, Pella, JELD-WEN, and Marvin. Professional installation. Call 945-207-3988.',
   keywords: 'window brands Plano TX, Andersen, Pella, JELD-WEN, Marvin, premium windows, premium doors',
+  alternates: {
+    canonical: 'https://windowreplacementplano.com/brands',
+  },
 }
 
 export default function BrandsPage() {
@@ -66,17 +70,34 @@ export default function BrandsPage() {
         <section className={styles.brandsSection}>
           <div className={styles.container}>
             <div className={styles.brandsGrid}>
-              {brandsData.map((brand) => (
-                <Link
-                  key={brand.slug}
-                  href={brand.route}
-                  className={styles.brandCard}
-                >
-                  <h2 className={styles.brandName}>{brand.name}</h2>
-                  <p className={styles.brandDescription}>{brand.description}</p>
-                  <span className={styles.learnMore}>Learn More</span>
-                </Link>
-              ))}
+              {brandsData.map((brand) => {
+                const imageMap: Record<string, string> = {
+                  'andersen-windows-doors': '/brands/andersen-windows-plano-tx.webp',
+                  'pella-windows-doors': '/brands/pella-windows-plano-tx.jpg',
+                  'jeld-wen-windows-doors': '/brands/jeld-wen-windows-plano-tx.jpg',
+                  'marvin-windows-doors': '/brands/marvin-windows-plano-tx.jpg',
+                }
+                return (
+                  <Link
+                    key={brand.slug}
+                    href={brand.route}
+                    className={styles.brandCard}
+                  >
+                    <Image
+                      src={imageMap[brand.slug] || '/brands/andersen-windows-plano-tx.webp'}
+                      alt={brand.name}
+                      width={400}
+                      height={200}
+                      className={styles.brandCardImage}
+                    />
+                    <div className={styles.brandCardContent}>
+                      <h2 className={styles.brandName}>{brand.name}</h2>
+                      <p className={styles.brandDescription}>{brand.description}</p>
+                      <span className={styles.learnMore}>Learn More</span>
+                    </div>
+                  </Link>
+                )
+              })}
             </div>
           </div>
         </section>

@@ -8,6 +8,7 @@ export const servicesData: ServiceItem[] = [
     short: "Classic double-hung windows with top and bottom sashes that slide vertically",
     route: "/windows/double-hung-windows",
     category: "Windows",
+    image: "/windows/double-hung-windows-plano-tx.avif",
   },
   {
     slug: "single-hung-windows",
@@ -15,6 +16,7 @@ export const servicesData: ServiceItem[] = [
     short: "Traditional windows with a fixed upper sash and movable lower sash",
     route: "/windows/single-hung-windows",
     category: "Windows",
+    image: "/windows/single-hung-windows-plano-tx.jpg",
   },
   {
     slug: "casement-windows",
@@ -22,6 +24,7 @@ export const servicesData: ServiceItem[] = [
     short: "Side-hinged windows that open outward for maximum ventilation",
     route: "/windows/casement-windows",
     category: "Windows",
+    image: "/windows/casement-windows-plano-tx.avif",
   },
   {
     slug: "awning-windows",
@@ -29,6 +32,7 @@ export const servicesData: ServiceItem[] = [
     short: "Top-hinged windows that open outward, ideal for ventilation during rain",
     route: "/windows/awning-windows",
     category: "Windows",
+    image: "/windows/awning-windows-plano-tx.webp",
   },
   {
     slug: "sliding-windows",
@@ -36,6 +40,7 @@ export const servicesData: ServiceItem[] = [
     short: "Horizontally sliding windows perfect for wide openings",
     route: "/windows/sliding-windows",
     category: "Windows",
+    image: "/windows/sliding-windows-plano-tx.jpg",
   },
   {
     slug: "picture-windows",
@@ -43,6 +48,7 @@ export const servicesData: ServiceItem[] = [
     short: "Large fixed windows that provide unobstructed views and natural light",
     route: "/windows/picture-windows",
     category: "Windows",
+    image: "/windows/picture-windows-plano-tx.jpg",
   },
   {
     slug: "bay-bow-windows",
@@ -50,6 +56,7 @@ export const servicesData: ServiceItem[] = [
     short: "Multi-panel windows that project outward, creating additional interior space",
     route: "/windows/bay-bow-windows",
     category: "Windows",
+    image: "/windows/bay-bow-windows-plano-tx.jpg",
   },
   {
     slug: "special-shape-windows",
@@ -57,6 +64,7 @@ export const servicesData: ServiceItem[] = [
     short: "Custom-shaped windows including arched, circular, and geometric designs",
     route: "/windows/special-shape-windows",
     category: "Windows",
+    image: "/windows/special-shape-windows-plano-tx.jpg",
   },
 
   // Materials (6 types)
@@ -64,7 +72,7 @@ export const servicesData: ServiceItem[] = [
     slug: "vinyl-windows",
     name: "Vinyl Windows",
     short: "Low-maintenance vinyl windows with superior energy efficiency",
-    route: "/windows/vinyl-windows",
+    route: "/materials/vinyl-windows",
     category: "Materials",
     image: "/window-types/vinyl-plano-tx.jpg",
   },
@@ -72,7 +80,7 @@ export const servicesData: ServiceItem[] = [
     slug: "aluminum-windows",
     name: "Aluminum Windows",
     short: "Durable aluminum windows with modern thermal efficiency",
-    route: "/windows/aluminum-windows",
+    route: "/materials/aluminum-windows",
     category: "Materials",
     image: "/window-types/aluminum-plano-tx.jpg",
   },
@@ -80,7 +88,7 @@ export const servicesData: ServiceItem[] = [
     slug: "fibrex-windows",
     name: "Fibrex Windows",
     short: "Andersen's premium composite material with wood-like beauty",
-    route: "/windows/fibrex-windows",
+    route: "/materials/fibrex-windows",
     category: "Materials",
     image: "/window-types/fibrex-plano-tx.jpg",
   },
@@ -88,7 +96,7 @@ export const servicesData: ServiceItem[] = [
     slug: "fiberglass-windows",
     name: "Fiberglass Windows",
     short: "Ultimate strength and insulation with authentic wood appearance",
-    route: "/windows/fiberglass-windows",
+    route: "/materials/fiberglass-windows",
     category: "Materials",
     image: "/window-types/fiberglass-plano-tx.jpg",
   },
@@ -96,7 +104,7 @@ export const servicesData: ServiceItem[] = [
     slug: "wood-clad-windows",
     name: "Wood Clad Windows",
     short: "Authentic wood interiors with weather-resistant exterior protection",
-    route: "/windows/wood-clad-windows",
+    route: "/materials/wood-clad-windows",
     category: "Materials",
     image: "/window-types/wood-clad-plano-tx.jpg",
   },
@@ -104,7 +112,7 @@ export const servicesData: ServiceItem[] = [
     slug: "wood-windows",
     name: "Wood Windows",
     short: "Traditional wood windows with natural beauty and superior insulation",
-    route: "/windows/wood-windows",
+    route: "/materials/wood-windows",
     category: "Materials",
     image: "/window-types/wood-plano-tx.jpg",
   },
@@ -116,6 +124,7 @@ export const servicesData: ServiceItem[] = [
     short: "Professional installation of front entry doors",
     route: "/doors/entry-door-installation",
     category: "Doors",
+    image: "/doors/entry-doors-plano-tx.jpg",
   },
   {
     slug: "patio-door-installation",
@@ -123,6 +132,7 @@ export const servicesData: ServiceItem[] = [
     short: "Sliding and hinged patio doors for seamless indoor-outdoor access",
     route: "/doors/patio-door-installation",
     category: "Doors",
+    image: "/doors/patio-doors-plano-tx.jpg",
   },
   {
     slug: "french-door-installation",
@@ -130,6 +140,7 @@ export const servicesData: ServiceItem[] = [
     short: "Classic double doors with glass panels for elegant transitions",
     route: "/doors/french-door-installation",
     category: "Doors",
+    image: "/doors/french-doors-plano-tx.webp",
   },
   {
     slug: "sliding-glass-door-installation",
@@ -137,6 +148,7 @@ export const servicesData: ServiceItem[] = [
     short: "Space-saving sliding doors with expansive glass panels",
     route: "/doors/sliding-glass-door-installation",
     category: "Doors",
+    image: "/doors/sliding-glass-doors-plano-tx.jpg",
   },
   {
     slug: "storm-door-installation",
@@ -144,6 +156,7 @@ export const servicesData: ServiceItem[] = [
     short: "Protective storm doors for added security and energy efficiency",
     route: "/doors/storm-door-installation",
     category: "Doors",
+    image: "/doors/storm-doors-plano-tx.jpg",
   },
   {
     slug: "custom-door-installation",
@@ -151,5 +164,6 @@ export const servicesData: ServiceItem[] = [
     short: "Fully customized doors designed to your specifications",
     route: "/doors/custom-door-installation",
     category: "Doors",
+    image: "/doors/custom-doors-plano-tx.webp",
   },
 ];

@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'JELD-WEN Windows & Doors Plano TX',
   description: 'Authorized JELD-WEN Windows & Doors dealer in Plano, TX. Quality windows and doors with AuraLast protection. Professional installation. Call 945-207-3988.',
   keywords: 'JELD-WEN windows Plano TX, JELD-WEN doors, AuraLast windows, JELD-WEN dealer',
+  alternates: {
+    canonical: 'https://windowreplacementplano.com/brands/jeld-wen-windows-doors',
+  },
 }
 
 export default function JeldWenPage() {

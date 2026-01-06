@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'Pella Windows & Doors Plano TX',
   description: 'Authorized Pella Windows & Doors dealer in Plano, TX. Premium windows with InsulShield technology. Professional installation. Call 945-207-3988.',
   keywords: 'Pella windows Plano TX, Pella doors, InsulShield windows, Pella dealer',
+  alternates: {
+    canonical: 'https://windowreplacementplano.com/brands/pella-windows-doors',
+  },
 }
 
 export default function PellaPage() {

@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'Andersen Windows & Doors Plano TX',
   description: 'Authorized Andersen Windows & Doors dealer in Plano, TX. Premium Fibrex windows, entry doors, and patio doors. Professional installation. Call 945-207-3988.',
   keywords: 'Andersen windows Plano TX, Andersen doors, Fibrex windows, Andersen dealer',
+  alternates: {
+    canonical: 'https://windowreplacementplano.com/brands/andersen-windows-doors',
+  },
 }
 
 export default function AndersenPage() {

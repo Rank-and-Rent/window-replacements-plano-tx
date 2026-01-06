@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'Marvin Windows & Doors Plano TX',
   description: 'Authorized Marvin Windows & Doors dealer in Plano, TX. Premium custom windows and doors. Signature, Elevate, Essential collections. Call 945-207-3988.',
   keywords: 'Marvin windows Plano TX, Marvin doors, custom windows, Marvin dealer',
+  alternates: {
+    canonical: 'https://windowreplacementplano.com/brands/marvin-windows-doors',
+  },
 }
 
 export default function MarvinPage() {
